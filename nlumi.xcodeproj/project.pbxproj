@@ -13,8 +13,9 @@
 		9105D7A3240441A100F3E239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9105D7A1240441A100F3E239 /* Main.storyboard */; };
 		9105D7A5240441A300F3E239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9105D7A4240441A300F3E239 /* Assets.xcassets */; };
 		9105D7A8240441A300F3E239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9105D7A6240441A300F3E239 /* LaunchScreen.storyboard */; };
-		9105D7B024044B9B00F3E239 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9105D7AF24044B9B00F3E239 /* DetailViewController.swift */; };
 		9105D7B22404502E00F3E239 /* dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = 9105D7B12404502D00F3E239 /* dictionary.json */; };
+		911A77E624054CE8009392F8 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A77E524054CE8009392F8 /* Dictionary.swift */; };
+		911A77E824056249009392F8 /* DictionaryLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A77E724056249009392F8 /* DictionaryLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +27,9 @@
 		9105D7A4240441A300F3E239 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9105D7A7240441A300F3E239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9105D7A9240441A300F3E239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9105D7AF24044B9B00F3E239 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9105D7B12404502D00F3E239 /* dictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dictionary.json; sourceTree = "<group>"; };
+		911A77E524054CE8009392F8 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		911A77E724056249009392F8 /* DictionaryLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,15 +64,40 @@
 			children = (
 				9105D79B240441A100F3E239 /* AppDelegate.swift */,
 				9105D79D240441A100F3E239 /* SceneDelegate.swift */,
-				9105D79F240441A100F3E239 /* SearchViewController.swift */,
-				9105D7A1240441A100F3E239 /* Main.storyboard */,
-				9105D7AF24044B9B00F3E239 /* DetailViewController.swift */,
+				911A77E9240571BE009392F8 /* Model */,
+				911A77EB2405725C009392F8 /* Views */,
+				911A77EA2405724A009392F8 /* Controllers */,
 				9105D7A4240441A300F3E239 /* Assets.xcassets */,
 				9105D7A6240441A300F3E239 /* LaunchScreen.storyboard */,
 				9105D7A9240441A300F3E239 /* Info.plist */,
 				9105D7B12404502D00F3E239 /* dictionary.json */,
 			);
 			path = nlumi;
+			sourceTree = "<group>";
+		};
+		911A77E9240571BE009392F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				911A77E524054CE8009392F8 /* Dictionary.swift */,
+				911A77E724056249009392F8 /* DictionaryLoader.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		911A77EA2405724A009392F8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9105D79F240441A100F3E239 /* SearchViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		911A77EB2405725C009392F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9105D7A1240441A100F3E239 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +173,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9105D7A0240441A100F3E239 /* SearchViewController.swift in Sources */,
+				911A77E624054CE8009392F8 /* Dictionary.swift in Sources */,
 				9105D79C240441A100F3E239 /* AppDelegate.swift in Sources */,
 				9105D79E240441A100F3E239 /* SceneDelegate.swift in Sources */,
-				9105D7B024044B9B00F3E239 /* DetailViewController.swift in Sources */,
+				911A77E824056249009392F8 /* DictionaryLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
