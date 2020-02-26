@@ -23,6 +23,9 @@ class SearchViewController: UIViewController {
         
         //trigger UITableViewDataSource
         tableView.dataSource = self
+        
+        //trigger UITableViewDelegate (disable since its only an example
+        tableView.delegate = self
     }
     
 }
@@ -47,8 +50,32 @@ extension SearchViewController: UITableViewDataSource {
         let xironga = data[indexPath.row].xironga
         
         cell.textLabel?.text = pt
-        cell.detailTextLabel?.text = "(\(gramatica)) \(changana)"
+        cell.detailTextLabel?.text = "(\(gramatica)) \(changana) or \(macua) or \(xironga)"
+        
         return cell
     }
+    
+
 }
 
+extension SearchViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row) //will print cell that was tapped on
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
+        vc?.ptWord = data[indexPath.row].pt
+        vc?.grWord = data[indexPath.row].gramatica
+        vc?.chWord = data[indexPath.row].changana
+        vc?.maWord = data[indexPath.row].macua
+        vc?.xiWord = data[indexPath.row].xironga
+        self.navigationController?.pushViewController(vc!, animated: true)
+        
+    }
+//
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let destination = segue.destination as? DetailViewController {
+//            //destination.ptLabel.text = "test" THIS IS CRASHING
+//
+//        }
+//    }
+}
