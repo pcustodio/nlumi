@@ -19,18 +19,18 @@ class DetailViewController: UIViewController {
     
     
     var ptWord = ""
+    var trWord = ""
+    var laWord = ""
     var grWord = ""
-    var chWord = ""
-    var maWord = ""
     var xiWord = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         ptLabel.text = ptWord
-        gramaticaLabel.text = grWord
-        changanaLabel.text = chWord
-        macuaLabel.text = maWord
+        gramaticaLabel.text = trWord
+        changanaLabel.text = laWord
+        macuaLabel.text = grWord
         xirongaLabel.text = xiWord
         
     }

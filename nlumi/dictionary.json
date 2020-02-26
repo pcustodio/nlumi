@@ -1,37 +1,38 @@
 [
   {
       "pt": "Amigo",
-      "changana": "test1",
-      "macua": "test2",
-      "xironga": "test3",
-      "gramatica": "s"
+      "translation": "test1",
+      "language": "Changana",
+      "grammar": "s",
   },
   {
       "pt": "Amigo",
-      "changana": "test1",
-      "macua": "test2",
-      "xironga": "test3",
-      "gramatica": "s"
+      "translation": "test2",
+      "language": "Macua",
+      "grammar": "s",
   },
   {
-      "pt": "Amizade",
-      "changana": "test1",
-      "macua": "test2",
-      "xironga": "test3",
-      "gramatica": "v"
+      "pt": "Amigo",
+      "translation": "test3",
+      "language": "Xironga",
+      "grammar": "s",
   },
   {
-      "pt": "Amigável",
-      "changana": "test1",
-      "macua": "test2",
-      "xironga": "test3",
-      "gramatica": "s"
+      "pt": "Montanha",
+      "translation": "test4",
+      "language": "Changana",
+      "grammar": "s",
   },
   {
-      "pt": "Amistoso",
-      "changana": "test1",
-      "macua": "test2",
-      "xironga": "test3",
-      "gramatica": "v"
+      "pt": "Montanha",
+      "translation": "test5",
+      "language": "Macua",
+      "grammar": "s",
+  },
+  {
+      "pt": "Montanha",
+      "translation": "test6",
+      "language": "Xironga",
+      "grammar": "s"
   }
 ]

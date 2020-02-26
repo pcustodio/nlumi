@@ -11,8 +11,7 @@ import Foundation
 //our data structure
 struct Dictionary : Codable {
     var pt: String
-    var changana: String
-    var macua: String
-    var xironga: String
-    var gramatica: String
+    var translation: String
+    var language: String
+    var grammar: String
 }
