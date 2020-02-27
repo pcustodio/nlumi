@@ -35,7 +35,7 @@
 		911A77E524054CE8009392F8 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		911A77E724056249009392F8 /* DictionaryLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryLoader.swift; sourceTree = "<group>"; };
 		91386A222407DE5C00E9B043 /* model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = model.xcdatamodel; sourceTree = "<group>"; };
-		91386A492408133600E9B043 /* AnimatedTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimatedTabBarController.swift; path = nlumi/Controllers/AnimatedTabBarController.swift; sourceTree = SOURCE_ROOT; };
+		91386A492408133600E9B043 /* AnimatedTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimatedTabBarController.swift; path = nlumi/Views/AnimatedTabBarController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,6 @@
 			children = (
 				911A77E524054CE8009392F8 /* Dictionary.swift */,
 				911A77E724056249009392F8 /* DictionaryLoader.swift */,
-				91386A492408133600E9B043 /* AnimatedTabBarController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,6 +103,7 @@
 		911A77EB2405725C009392F8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				91386A492408133600E9B043 /* AnimatedTabBarController.swift */,
 				9105D7A1240441A100F3E239 /* Main.storyboard */,
 			);
 			path = Views;

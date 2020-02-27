@@ -17,25 +17,25 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="QmJ-ma-CmB"/>
                     </view>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="r62-mA-d8m">
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="yfo-nQ-y8o">
                         <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" ambiguous="YES" id="NOh-MG-txF">
-                            <rect key="frame" x="207" y="22" width="0.0" height="0.0"/>
+                        <view key="titleView" contentMode="scaleToFill" ambiguous="YES" id="yjD-4m-zvo">
+                            <rect key="frame" x="132" y="5.5" width="150" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="igF-MU-P4A">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="kaL-fQ-M0V">
                                     <rect key="frame" x="0.0" y="0.0" width="70" height="33"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="70" id="2x0-xE-HBY"/>
+                                        <constraint firstAttribute="width" constant="70" id="xKI-k5-gz3"/>
                                     </constraints>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="igF-MU-P4A" firstAttribute="leading" secondItem="NOh-MG-txF" secondAttribute="leading" id="WwC-8Z-kar"/>
-                                <constraint firstAttribute="bottom" secondItem="igF-MU-P4A" secondAttribute="bottom" id="hTp-TX-kfF"/>
-                                <constraint firstItem="igF-MU-P4A" firstAttribute="top" secondItem="NOh-MG-txF" secondAttribute="top" id="lKZ-Gw-Lvy"/>
-                                <constraint firstAttribute="trailing" secondItem="igF-MU-P4A" secondAttribute="trailing" id="lmp-pF-45O"/>
+                                <constraint firstItem="kaL-fQ-M0V" firstAttribute="leading" secondItem="yjD-4m-zvo" secondAttribute="leading" id="Jdd-fL-Pjd"/>
+                                <constraint firstAttribute="trailing" secondItem="kaL-fQ-M0V" secondAttribute="trailing" id="Si3-Mf-fSq"/>
+                                <constraint firstAttribute="bottom" secondItem="kaL-fQ-M0V" secondAttribute="bottom" id="TfH-NF-Bk4"/>
+                                <constraint firstItem="kaL-fQ-M0V" firstAttribute="top" secondItem="yjD-4m-zvo" secondAttribute="top" id="ZKu-16-y5L"/>
                             </constraints>
                         </view>
                     </navigationItem>
@@ -140,15 +140,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Macua" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzo-IS-E3v">
-                                <rect key="frame" x="50" y="544" width="52" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Xironga" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOZ-pK-LkS">
-                                <rect key="frame" x="50" y="588" width="59" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzo-IS-E3v">
+                                <rect key="frame" x="50" y="544" width="76" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -161,8 +154,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Changana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JI1-B9-yXh">
-                                <rect key="frame" x="50" y="492" width="78" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Translation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JI1-B9-yXh">
+                                <rect key="frame" x="50" y="492" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Annotation Marker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUl-3o-Ebc">
+                                <rect key="frame" x="136" y="686" width="142" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -173,14 +173,18 @@
                         <viewLayoutGuide key="safeArea" id="wJz-xo-VxJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="o6G-gv-wNo">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="bookmark" catalog="system" id="Vqb-pq-ejL"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="bookmark" catalog="system" id="Vqb-pq-ejL">
+                            <connections>
+                                <action selector="addBookmark:" destination="6f4-Lf-2pJ" id="PlQ-i7-ZeR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="changanaLabel" destination="JI1-B9-yXh" id="tdu-Pg-gKO"/>
-                        <outlet property="gramaticaLabel" destination="8PB-hy-E51" id="L6D-Ns-Sij"/>
-                        <outlet property="macuaLabel" destination="Rzo-IS-E3v" id="oHG-Az-cg1"/>
+                        <outlet property="annotationMarker" destination="FUl-3o-Ebc" id="e4U-Ij-HoQ"/>
+                        <outlet property="grammarLabel" destination="8PB-hy-E51" id="6kY-YB-XSF"/>
+                        <outlet property="languageLabel" destination="Rzo-IS-E3v" id="9FQ-BH-OLg"/>
                         <outlet property="ptLabel" destination="tJz-j6-fEy" id="x6m-Ye-lVL"/>
-                        <outlet property="xirongaLabel" destination="MOZ-pK-LkS" id="mDQ-xB-ctY"/>
+                        <outlet property="translationLabel" destination="JI1-B9-yXh" id="FTW-eV-FGu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cnn-e8-IoL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
