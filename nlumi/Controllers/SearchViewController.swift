@@ -42,6 +42,7 @@ class SearchViewController: UIViewController {
         tableView.delegate = self
         
         navigationItem.searchController = searchController
+        
     
     }
     
@@ -82,43 +83,43 @@ extension SearchViewController: UISearchResultsUpdating {
     }
 }
 
+//MARK: - TableView
 
-extension SearchViewController: UITableViewDataSource {
+extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
 
-    //how many rows do we expect in our table view
+    //how many rows on TableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //return nr of messages dynamically
         if isFiltering() {return filteredWords.count}
         return data.count
     }
     
-    //this is where we are creating our cell
-    //indexpath is the position: which cell it should display on each row of our table view
+    //create our cell
+    //indexpath indicates which cell to display on each TableView row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
         
+        //filter cells
         let currentWord: Dictionary
-        
         if isFiltering() {
             currentWord = filteredWords[indexPath.row]
         } else {
             currentWord = data[indexPath.row]
         }
         
+        //display our cell
         let pt = currentWord.pt
         let grammar = currentWord.grammar
         let translate = currentWord.translation
         let language = currentWord.language
-        
         cell.textLabel?.text = pt
         cell.detailTextLabel?.text = "(\(grammar)) \(translate) in \(language)"
         
         return cell
         
     }
-}
-
-extension SearchViewController: UITableViewDelegate {
+    
+    //cell was tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         //will print cell that was tapped on
@@ -127,6 +128,7 @@ extension SearchViewController: UITableViewDelegate {
         //deselect row
         tableView.deselectRow(at: indexPath, animated: true)
         
+        //send to DetailViewController
         let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
         vc?.ptWord = data[indexPath.row].pt
         vc?.trWord = data[indexPath.row].translation

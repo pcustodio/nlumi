@@ -17,6 +17,8 @@
 		910A7F2724059AE80023DB72 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A7F2624059AE80023DB72 /* DetailViewController.swift */; };
 		911A77E624054CE8009392F8 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A77E524054CE8009392F8 /* Dictionary.swift */; };
 		911A77E824056249009392F8 /* DictionaryLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A77E724056249009392F8 /* DictionaryLoader.swift */; };
+		91386A232407DE5C00E9B043 /* nlumi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91386A212407DE5C00E9B043 /* nlumi.xcdatamodeld */; };
+		91386A4A2408133600E9B043 /* AnimatedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91386A492408133600E9B043 /* AnimatedTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		910A7F2624059AE80023DB72 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		911A77E524054CE8009392F8 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		911A77E724056249009392F8 /* DictionaryLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryLoader.swift; sourceTree = "<group>"; };
+		91386A222407DE5C00E9B043 /* model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = model.xcdatamodel; sourceTree = "<group>"; };
+		91386A492408133600E9B043 /* AnimatedTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimatedTabBarController.swift; path = nlumi/Controllers/AnimatedTabBarController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 				911A77EA2405724A009392F8 /* Controllers */,
 				9105D7A4240441A300F3E239 /* Assets.xcassets */,
 				9105D7A6240441A300F3E239 /* LaunchScreen.storyboard */,
+				91386A212407DE5C00E9B043 /* nlumi.xcdatamodeld */,
 				9105D7A9240441A300F3E239 /* Info.plist */,
 				9105D7B12404502D00F3E239 /* dictionary.json */,
 			);
@@ -82,6 +87,7 @@
 			children = (
 				911A77E524054CE8009392F8 /* Dictionary.swift */,
 				911A77E724056249009392F8 /* DictionaryLoader.swift */,
+				91386A492408133600E9B043 /* AnimatedTabBarController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +184,8 @@
 				9105D7A0240441A100F3E239 /* SearchViewController.swift in Sources */,
 				911A77E624054CE8009392F8 /* Dictionary.swift in Sources */,
 				9105D79C240441A100F3E239 /* AppDelegate.swift in Sources */,
+				91386A232407DE5C00E9B043 /* nlumi.xcdatamodeld in Sources */,
+				91386A4A2408133600E9B043 /* AnimatedTabBarController.swift in Sources */,
 				910A7F2724059AE80023DB72 /* DetailViewController.swift in Sources */,
 				9105D79E240441A100F3E239 /* SceneDelegate.swift in Sources */,
 				911A77E824056249009392F8 /* DictionaryLoader.swift in Sources */,
@@ -378,6 +386,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		91386A212407DE5C00E9B043 /* nlumi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				91386A222407DE5C00E9B043 /* model.xcdatamodel */,
+			);
+			currentVersion = 91386A222407DE5C00E9B043 /* model.xcdatamodel */;
+			path = nlumi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9105D790240441A100F3E239 /* Project object */;
 }

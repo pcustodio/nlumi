@@ -9,14 +9,12 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-  
 
     @IBOutlet weak var ptLabel: UILabel!
     @IBOutlet weak var gramaticaLabel: UILabel!
     @IBOutlet weak var changanaLabel: UILabel!
     @IBOutlet weak var macuaLabel: UILabel!
     @IBOutlet weak var xirongaLabel: UILabel!
-    
     
     var ptWord = ""
     var trWord = ""
@@ -32,7 +30,6 @@ class DetailViewController: UIViewController {
         changanaLabel.text = laWord
         macuaLabel.text = grWord
         xirongaLabel.text = xiWord
-        
     }
     
 }
