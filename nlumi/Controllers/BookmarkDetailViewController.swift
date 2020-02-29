@@ -1,5 +1,5 @@
 //
-//  DetailViewController.swift
+//  BookmarkDetailViewController.swift
 //  nlumi
 //
 //  Created by Paulo Custódio on 25/02/2020.
@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class DetailViewController: UIViewController {
+class BookmarkDetailViewController: UIViewController {
 
     @IBOutlet weak var ptLabel: UILabel!
     @IBOutlet weak var grammarLabel: UILabel!
