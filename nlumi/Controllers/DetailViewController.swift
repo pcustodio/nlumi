@@ -17,10 +17,10 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var annotationMarker: UILabel!
     @IBOutlet weak var bookmarkLabel: UIBarButtonItem!
     
-    
     var ptWord = ""
     var trWord = ""
     var laWord = ""
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +28,14 @@ class DetailViewController: UIViewController {
         ptLabel.text = ptWord
         translationLabel.text = trWord
         languageLabel.text = laWord
-        annotationMarker.text = ""
     
-        retrieveData()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        annotationMarker.text = ""
     }
 
     @IBAction func addBookmark(_ sender: UIBarButtonItem) {
@@ -38,26 +43,43 @@ class DetailViewController: UIViewController {
             print("yo we are a not favorite atm")
             deleteData()
             retrieveData()
+            self.annotationMarker.alpha = 1
+            annotationMarker.isHidden = true
+            
         } else {
             print("yo we are a favorite atm")
             createData()
+            annotationMarker.isHidden = false
+            self.annotationMarker.alpha = 1
             retrieveData()
-            successAnimated()
+            bookSuccessAnimated()
         }
     }
     
     @IBAction func copyLabel(_ sender: UIButton) {
         UIPasteboard.general.string = trWord
+        annotationMarker.isHidden = false
+        self.annotationMarker.alpha = 1
+        copySuccessAnimated()
     }
     
-    func successAnimated() {
+    func bookSuccessAnimated() {
         //success message
         annotationMarker.text = "Anotado"
-        annotationMarker.isHidden = false
-        UIView.animate(withDuration: 0.75, delay: 1.5, animations: { () -> Void in
+        UIView.animate(withDuration: 0.75, delay: 1.0, animations: { () -> Void in
             self.annotationMarker.alpha = 0
         })
     }
+    
+    func copySuccessAnimated() {
+        //success message
+        annotationMarker.text = "Copiado"
+        UIView.animate(withDuration: 0.75, delay: 1.0, animations: { () -> Void in
+            self.annotationMarker.alpha = 0
+        })
+    }
+    
+    
     
     //MARK: - Create Data
     func createData(){

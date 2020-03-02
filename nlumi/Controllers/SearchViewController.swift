@@ -162,7 +162,7 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
         let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
         vc?.ptWord = data[indexPath.row].pt
         vc?.trWord = data[indexPath.row].translation
-        vc?.laWord = data[indexPath.row].language
+        vc?.laWord = "Português > \(data[indexPath.row].language)"
         self.navigationController?.pushViewController(vc!, animated: true)
     }
 }
