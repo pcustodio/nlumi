@@ -28,8 +28,6 @@ class DetailViewController: UIViewController {
         ptLabel.text = ptWord
         translationLabel.text = trWord
         languageLabel.text = laWord
-    
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {

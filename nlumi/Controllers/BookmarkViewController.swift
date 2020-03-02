@@ -14,6 +14,7 @@ class BookmarkViewController: UIViewController {
     var bookmarks: [NSManagedObject] = []
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var qtyLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +52,9 @@ class BookmarkViewController: UIViewController {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
         tableView.reloadData()
+        
+        //get
+        qtyLabel.text = "\(tableView.numberOfRows(inSection: 0)) palavras"
     }
 }
 
