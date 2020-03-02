@@ -88,11 +88,11 @@ extension BookmarkViewController: UITableViewDataSource, UITableViewDelegate {
         
                 //PROBLEM CONTINUES HERE
                 //WE NEED TO USE KEYPATH 
-                
-        //        vc?.ptWord = data[indexPath.row].pt
-        //        vc?.trWord = data[indexPath.row].translation
-        //        vc?.laWord = data[indexPath.row].language
-        //        vc?.grWord = data[indexPath.row].grammar
+                let bookmark = bookmarks[indexPath.row]
+        vc?.ptWord = (bookmark.value(forKeyPath: "ptNoted") as? String)!
+        vc?.trWord = (bookmark.value(forKeyPath: "trNoted") as? String)!
+        vc?.laWord = (bookmark.value(forKeyPath: "laNoted") as? String)!
+        vc?.grWord = (bookmark.value(forKeyPath: "grNoted") as? String)!
         self.navigationController?.pushViewController(vc!, animated: true)
         
     }

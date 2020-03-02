@@ -74,6 +74,7 @@ class DetailViewController: UIViewController {
         user.setValue(ptWord, forKeyPath: "ptNoted")
         user.setValue(trWord, forKeyPath: "trNoted")
         user.setValue(laWord, forKeyPath: "laNoted")
+        user.setValue(grWord, forKeyPath: "grNoted")
 
         //Now we have set all the values. The next step is to save them inside the Core Data
         do {
@@ -107,8 +108,9 @@ class DetailViewController: UIViewController {
                 print(data.value(forKeyPath: "ptNoted") as! String)
                 print(data.value(forKeyPath: "trNoted") as! String)
                 print(data.value(forKeyPath: "laNoted") as! String)
+                print(data.value(forKeyPath: "grNoted") as! String)
                 
-                //check if
+                //retrieved data is stored translation term
                 let retrievedData = data.value(forKey: "trNoted") as! String
                 
                 //if coredata word  matches translated term on screen
