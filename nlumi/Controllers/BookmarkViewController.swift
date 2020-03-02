@@ -21,6 +21,7 @@ class BookmarkViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //large title
         navigationController?.navigationBar.prefersLargeTitles = true
         
         //trigger UITableViewDataSource

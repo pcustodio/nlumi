@@ -57,25 +57,7 @@
                         <viewLayoutGuide key="safeArea" id="QmJ-ma-CmB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Anotações" largeTitleDisplayMode="always" id="JeT-6i-wiB">
-                        <view key="titleView" contentMode="scaleToFill" ambiguous="YES" id="poJ-fq-s5U">
-                            <rect key="frame" x="132" y="5.5" width="150" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="VOi-gj-mJ6">
-                                    <rect key="frame" x="0.0" y="0.0" width="70" height="33"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="70" id="HWL-ja-qWI"/>
-                                    </constraints>
-                                </imageView>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="trailing" secondItem="VOi-gj-mJ6" secondAttribute="trailing" id="JIS-xh-RWz"/>
-                                <constraint firstItem="VOi-gj-mJ6" firstAttribute="leading" secondItem="poJ-fq-s5U" secondAttribute="leading" id="eAQ-c6-xOX"/>
-                                <constraint firstAttribute="bottom" secondItem="VOi-gj-mJ6" secondAttribute="bottom" id="s4O-JO-zzX"/>
-                                <constraint firstItem="VOi-gj-mJ6" firstAttribute="top" secondItem="poJ-fq-s5U" secondAttribute="top" id="xjF-w7-AFx"/>
-                            </constraints>
-                        </view>
+                        <barButtonItem key="rightBarButtonItem" title="Editar" id="Arn-OM-PYn"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -205,7 +187,7 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="NNF-ky-BlU">
                         <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" ambiguous="YES" id="OTT-RE-Run">
+                        <view key="titleView" contentMode="scaleToFill" id="OTT-RE-Run">
                             <rect key="frame" x="132" y="5.5" width="150" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -340,37 +322,23 @@
             </objects>
             <point key="canvasLocation" x="1050.7246376811595" y="116.51785714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Sobre-->
         <scene sceneID="rhl-EJ-GTp">
             <objects>
-                <viewController id="Yme-tj-Md1" sceneMemberID="viewController">
+                <viewController id="Yme-tj-Md1" customClass="AboutViewController" customModule="nlumi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CcG-cC-OdV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Vde-0p-Qc8"/>
                     </view>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="L72-jP-e1b">
-                        <nil key="title"/>
+                    <navigationItem key="navigationItem" title="Sobre" largeTitleDisplayMode="always" id="L72-jP-e1b">
                         <view key="titleView" contentMode="scaleToFill" id="wZP-t6-Cy8">
                             <rect key="frame" x="207" y="22" width="0.0" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cgI-w5-DQC">
-                                    <rect key="frame" x="0.0" y="0.0" width="70" height="0.0"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="70" id="DHw-dY-c8J"/>
-                                    </constraints>
-                                </imageView>
-                            </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="trailing" secondItem="cgI-w5-DQC" secondAttribute="trailing" id="AHa-oP-OMf"/>
-                                <constraint firstItem="cgI-w5-DQC" firstAttribute="top" secondItem="wZP-t6-Cy8" secondAttribute="top" id="QZs-M6-mPk"/>
-                                <constraint firstItem="cgI-w5-DQC" firstAttribute="leading" secondItem="wZP-t6-Cy8" secondAttribute="leading" id="aTt-wi-0gn"/>
-                                <constraint firstAttribute="bottom" secondItem="cgI-w5-DQC" secondAttribute="bottom" id="ggN-jA-kpU"/>
-                            </constraints>
                         </view>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.arrow.up" catalog="system" id="bJ0-Cg-H1J"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j70-1a-o1h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -396,11 +364,11 @@
             </objects>
             <point key="canvasLocation" x="2219" y="117"/>
         </scene>
-        <!--Ajuda-->
+        <!--Sobre-->
         <scene sceneID="X3v-nE-aED">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Snh-9P-JX0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Ajuda" image="bubble.right" catalog="system" id="fMY-nf-f1x"/>
+                    <tabBarItem key="tabBarItem" title="Sobre" image="text.alignleft" catalog="system" id="fMY-nf-f1x"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eT1-nO-ogd">
@@ -419,8 +387,9 @@
     </scenes>
     <resources>
         <image name="bookmark" catalog="system" width="56" height="64"/>
-        <image name="bubble.right" catalog="system" width="64" height="54"/>
         <image name="logo" width="109" height="31"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+        <image name="text.alignleft" catalog="system" width="64" height="50"/>
     </resources>
 </document>
