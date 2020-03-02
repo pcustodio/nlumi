@@ -12,7 +12,6 @@ import CoreData
 class BookmarkDetailViewController: UIViewController {
 
     @IBOutlet weak var ptLabel: UILabel!
-    @IBOutlet weak var grammarLabel: UILabel!
     @IBOutlet weak var translationLabel: UILabel!
     @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var annotationMarker: UILabel!
@@ -21,13 +20,11 @@ class BookmarkDetailViewController: UIViewController {
     var ptWord = ""
     var trWord = ""
     var laWord = ""
-    var grWord = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         ptLabel.text = ptWord
-        grammarLabel.text = grWord
         translationLabel.text = trWord
         languageLabel.text = laWord
         annotationMarker.text = ""

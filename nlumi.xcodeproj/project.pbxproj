@@ -19,6 +19,9 @@
 		911A77E824056249009392F8 /* DictionaryLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A77E724056249009392F8 /* DictionaryLoader.swift */; };
 		91386A232407DE5C00E9B043 /* nlumi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91386A212407DE5C00E9B043 /* nlumi.xcdatamodeld */; };
 		91386A4A2408133600E9B043 /* AnimatedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91386A492408133600E9B043 /* AnimatedTabBarController.swift */; };
+		9194CFDB240D49CB009D9381 /* ProximaNova Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9194CFD8240D49CB009D9381 /* ProximaNova Light.otf */; };
+		9194CFDC240D49CB009D9381 /* ProximaNova Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9194CFD9240D49CB009D9381 /* ProximaNova Semibold.otf */; };
+		9194CFDD240D49CB009D9381 /* ProximaNova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9194CFDA240D49CB009D9381 /* ProximaNova Bold.otf */; };
 		91AE7010240D151F00EA7078 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE700F240D151F00EA7078 /* AboutViewController.swift */; };
 		91FE69302409536D00FADD53 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE692F2409536D00FADD53 /* BookmarkViewController.swift */; };
 		91FE6932240985D000FADD53 /* BookmarkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE6931240985D000FADD53 /* BookmarkDetailViewController.swift */; };
@@ -39,6 +42,9 @@
 		911A77E724056249009392F8 /* DictionaryLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryLoader.swift; sourceTree = "<group>"; };
 		91386A222407DE5C00E9B043 /* model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = model.xcdatamodel; sourceTree = "<group>"; };
 		91386A492408133600E9B043 /* AnimatedTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimatedTabBarController.swift; path = nlumi/Controllers/AnimatedTabBarController.swift; sourceTree = SOURCE_ROOT; };
+		9194CFD8240D49CB009D9381 /* ProximaNova Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova Light.otf"; sourceTree = "<group>"; };
+		9194CFD9240D49CB009D9381 /* ProximaNova Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova Semibold.otf"; sourceTree = "<group>"; };
+		9194CFDA240D49CB009D9381 /* ProximaNova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova Bold.otf"; sourceTree = "<group>"; };
 		91AE700F240D151F00EA7078 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		91FE692F2409536D00FADD53 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
 		91FE6931240985D000FADD53 /* BookmarkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkDetailViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +86,7 @@
 				911A77EB2405725C009392F8 /* Views */,
 				911A77EA2405724A009392F8 /* Controllers */,
 				9105D7A4240441A300F3E239 /* Assets.xcassets */,
+				9194CFD7240D4997009D9381 /* Fonts */,
 				9105D7A6240441A300F3E239 /* LaunchScreen.storyboard */,
 				91386A212407DE5C00E9B043 /* nlumi.xcdatamodeld */,
 				9105D7A9240441A300F3E239 /* Info.plist */,
@@ -116,6 +123,16 @@
 				9105D7A1240441A100F3E239 /* Main.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9194CFD7240D4997009D9381 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9194CFDA240D49CB009D9381 /* ProximaNova Bold.otf */,
+				9194CFD8240D49CB009D9381 /* ProximaNova Light.otf */,
+				9194CFD9240D49CB009D9381 /* ProximaNova Semibold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +193,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9194CFDC240D49CB009D9381 /* ProximaNova Semibold.otf in Resources */,
+				9194CFDD240D49CB009D9381 /* ProximaNova Bold.otf in Resources */,
+				9194CFDB240D49CB009D9381 /* ProximaNova Light.otf in Resources */,
 				9105D7A8240441A300F3E239 /* LaunchScreen.storyboard in Resources */,
 				9105D7B22404502E00F3E239 /* dictionary.json in Resources */,
 				9105D7A5240441A300F3E239 /* Assets.xcassets in Resources */,

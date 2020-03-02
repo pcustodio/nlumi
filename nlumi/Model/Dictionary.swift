@@ -13,5 +13,4 @@ struct Dictionary : Codable {
     var pt: String
     var translation: String
     var language: String
-    var grammar: String
 }

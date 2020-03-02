@@ -23,7 +23,7 @@ class SearchViewController: UIViewController {
         s.searchBar.placeholder = "Pesquisar termos"
         s.searchBar.sizeToFit()
         s.searchBar.searchBarStyle = .prominent
-        s.searchBar.scopeButtonTitles = ["Todos", "Changana", "Xironga", "Macua"]
+        s.searchBar.scopeButtonTitles = ["Tudo", "Changana", "Ronga", "Macua"]
         s.searchBar.delegate = self
         return s
     }()
@@ -49,9 +49,9 @@ class SearchViewController: UIViewController {
     
     }
     
-    func filterContentForSearchText(searchText: String, scope: String = "Todos") {
+    func filterContentForSearchText(searchText: String, scope: String = "Tudo") {
         filteredWords = data.filter({ (dictionary: Dictionary) -> Bool in
-            let doesLanguageMatch = (scope == "Todos") || (dictionary.language == scope)
+            let doesLanguageMatch = (scope == "Tudo") || (dictionary.language == scope)
             if isSearchBarEmpty() {
                 return doesLanguageMatch
             } else {
@@ -71,6 +71,33 @@ class SearchViewController: UIViewController {
     }
     
 }
+
+
+//MARK: - Automatic Row Height for Subtitle Cell @ stackoverflow.com/questions/41421670/swift-automatic-row-height-for-subtitle-cell
+
+class MyTableViewCell: UITableViewCell {
+
+    override func systemLayoutSizeFitting(_ targetSize: CGSize, withHorizontalFittingPriority horizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority) -> CGSize {
+
+        self.layoutIfNeeded()
+        var size = super.systemLayoutSizeFitting(targetSize, withHorizontalFittingPriority: horizontalFittingPriority, verticalFittingPriority: verticalFittingPriority)
+
+        if let textLabel = self.textLabel, let detailTextLabel = self.detailTextLabel {
+            let detailHeight = detailTextLabel.frame.size.height
+            if detailTextLabel.frame.origin.x > textLabel.frame.origin.x { // style = Value1 or Value2
+                let textHeight = textLabel.frame.size.height
+                if (detailHeight > textHeight) {
+                    size.height += detailHeight - textHeight
+                }
+            } else { // style = Subtitle, so always add subtitle height
+                size.height += detailHeight
+            }
+        }
+        return size
+    }
+}
+
+//MARK: - SearchViewController
 
 extension SearchViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
@@ -112,11 +139,11 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
         
         //display our cell
         let pt = currentWord.pt
-        let grammar = currentWord.grammar
         let translate = currentWord.translation
         let language = currentWord.language
-        cell.textLabel?.text = pt
-        cell.detailTextLabel?.text = "(\(grammar)) \(translate) in \(language)"
+
+        cell.textLabel?.text = "\(pt)"
+        cell.detailTextLabel?.text = "\(translate) (em \(language))"
         
         return cell
         
@@ -136,7 +163,6 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
         vc?.ptWord = data[indexPath.row].pt
         vc?.trWord = data[indexPath.row].translation
         vc?.laWord = data[indexPath.row].language
-        vc?.grWord = data[indexPath.row].grammar
         self.navigationController?.pushViewController(vc!, animated: true)
     }
 }

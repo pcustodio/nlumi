@@ -3,36 +3,30 @@
       "pt": "Amigo",
       "translation": "test1",
       "language": "Changana",
-      "grammar": "s",
   },
   {
-      "pt": "Amigo",
-      "translation": "test2",
+      "pt": "Coruja",
+      "translation": "Esisi, Kurukutu",
       "language": "Macua",
-      "grammar": "s",
   },
   {
       "pt": "Amigo",
       "translation": "test3",
-      "language": "Xironga",
-      "grammar": "s",
+      "language": "Ronga",
   },
   {
       "pt": "Montanha",
       "translation": "test4",
       "language": "Changana",
-      "grammar": "s",
   },
   {
       "pt": "Montanha",
       "translation": "test5",
       "language": "Macua",
-      "grammar": "s",
   },
   {
       "pt": "Montanha",
       "translation": "test6",
-      "language": "Xironga",
-      "grammar": "s"
+      "language": "Ronga"
   }
 ]

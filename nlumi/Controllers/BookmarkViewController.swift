@@ -54,6 +54,9 @@ class BookmarkViewController: UIViewController {
     }
 }
 
+
+//MARK: - Empty message
+
 extension UITableView {
 
     func setEmptyMessage(_ message: String) {
@@ -112,14 +115,11 @@ extension BookmarkViewController: UITableViewDataSource, UITableViewDelegate {
         
         //send to DetailViewController
         let vc = storyboard?.instantiateViewController(withIdentifier: "BookmarkDetailViewController") as? BookmarkDetailViewController
-        
-                //PROBLEM CONTINUES HERE
-                //WE NEED TO USE KEYPATH 
-                let bookmark = bookmarks[indexPath.row]
+
+        let bookmark = bookmarks[indexPath.row]
         vc?.ptWord = (bookmark.value(forKeyPath: "ptNoted") as? String)!
         vc?.trWord = (bookmark.value(forKeyPath: "trNoted") as? String)!
         vc?.laWord = (bookmark.value(forKeyPath: "laNoted") as? String)!
-        vc?.grWord = (bookmark.value(forKeyPath: "grNoted") as? String)!
         self.navigationController?.pushViewController(vc!, animated: true)
         
     }

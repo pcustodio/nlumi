@@ -12,22 +12,20 @@ import CoreData
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var ptLabel: UILabel!
-    @IBOutlet weak var grammarLabel: UILabel!
     @IBOutlet weak var translationLabel: UILabel!
     @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var annotationMarker: UILabel!
     @IBOutlet weak var bookmarkLabel: UIBarButtonItem!
     
+    
     var ptWord = ""
     var trWord = ""
     var laWord = ""
-    var grWord = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         ptLabel.text = ptWord
-        grammarLabel.text = grWord
         translationLabel.text = trWord
         languageLabel.text = laWord
         annotationMarker.text = ""
@@ -46,6 +44,10 @@ class DetailViewController: UIViewController {
             retrieveData()
             successAnimated()
         }
+    }
+    
+    @IBAction func copyLabel(_ sender: UIButton) {
+        UIPasteboard.general.string = trWord
     }
     
     func successAnimated() {
@@ -74,7 +76,6 @@ class DetailViewController: UIViewController {
         user.setValue(ptWord, forKeyPath: "ptNoted")
         user.setValue(trWord, forKeyPath: "trNoted")
         user.setValue(laWord, forKeyPath: "laNoted")
-        user.setValue(grWord, forKeyPath: "grNoted")
 
         //Now we have set all the values. The next step is to save them inside the Core Data
         do {
@@ -108,7 +109,6 @@ class DetailViewController: UIViewController {
                 print(data.value(forKeyPath: "ptNoted") as! String)
                 print(data.value(forKeyPath: "trNoted") as! String)
                 print(data.value(forKeyPath: "laNoted") as! String)
-                print(data.value(forKeyPath: "grNoted") as! String)
                 
                 //retrieved data is stored translation term
                 let retrievedData = data.value(forKey: "trNoted") as! String
