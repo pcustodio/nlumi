@@ -327,6 +327,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="iDN-3v-fuP" kind="relationship" relationship="viewControllers" id="RCi-aQ-Rkf"/>
@@ -410,4 +411,5 @@
         <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
         <image name="text.alignleft" catalog="system" width="64" height="50"/>
     </resources>
+    <color key="tintColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>
