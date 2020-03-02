@@ -13,9 +13,6 @@ class BookmarkViewController: UIViewController {
 
     var bookmarks: [NSManagedObject] = []
     
-    //PROBLEM BEGINS HERE
-//    let data = DictionaryLoader().dictionary
-    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -23,6 +20,9 @@ class BookmarkViewController: UIViewController {
         
         //large title
         navigationController?.navigationBar.prefersLargeTitles = true
+        
+        //remove extraneous empty cells
+        tableView.tableFooterView = UIView()
         
         //trigger UITableViewDataSource
         tableView.dataSource = self
@@ -54,12 +54,39 @@ class BookmarkViewController: UIViewController {
     }
 }
 
+extension UITableView {
+
+    func setEmptyMessage(_ message: String) {
+        let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+        messageLabel.text = message
+        messageLabel.textColor = .black
+        messageLabel.numberOfLines = 0
+        messageLabel.textAlignment = .center
+        messageLabel.font = UIFont(name: "HelveticaNeue-UltraLight", size: 30)
+        messageLabel.sizeToFit()
+
+        self.backgroundView = messageLabel
+        self.separatorStyle = .none
+    }
+
+    func restore() {
+        self.backgroundView = nil
+        self.separatorStyle = .singleLine
+    }
+}
+
 //MARK: - TableView
 
 extension BookmarkViewController: UITableViewDataSource, UITableViewDelegate {
 
     //how many rows on TableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if bookmarks.count == 0 {
+            self.tableView.setEmptyMessage("Sem anotações")
+        } else {
+            self.tableView.restore()
+        }
         return bookmarks.count
     }
     

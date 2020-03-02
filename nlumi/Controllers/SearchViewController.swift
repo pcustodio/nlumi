@@ -35,6 +35,9 @@ class SearchViewController: UIViewController {
         //print json
         //print(data)
         
+        //remove extraneous empty cells
+        tableView.tableFooterView = UIView()
+        
         //trigger UITableViewDataSource
         tableView.dataSource = self
         

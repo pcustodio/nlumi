@@ -62,7 +62,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="qDu-Yo-f2U" id="09B-yj-KQz"/>
-                        <segue destination="tgG-Bb-x02" kind="show" id="05f-MB-dpA"/>
+                        <segue destination="tgG-Bb-x02" kind="show" identifier="showBookmarkDetail" id="05f-MB-dpA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YA8-9N-IjL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -192,9 +192,9 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="KFR-LX-R33">
-                                    <rect key="frame" x="0.0" y="0.0" width="70" height="33"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="33"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="70" id="gGn-ua-G9L"/>
+                                        <constraint firstAttribute="width" priority="997" constant="70" id="dZ0-5H-r5o"/>
                                     </constraints>
                                 </imageView>
                             </subviews>
