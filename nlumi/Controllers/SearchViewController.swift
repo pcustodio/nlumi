@@ -52,7 +52,7 @@ class SearchViewController: UIViewController {
             if isSearchBarEmpty() {
                 return doesLanguageMatch
             } else {
-                return doesLanguageMatch && dictionary.language.lowercased().contains(searchText.lowercased())
+                return doesLanguageMatch && dictionary.pt.lowercased().contains(searchText.lowercased())
             }
         })
         tableView.reloadData()
