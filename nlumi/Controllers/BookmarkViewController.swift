@@ -14,7 +14,6 @@ class BookmarkViewController: UIViewController {
     var bookmarks: [NSManagedObject] = []
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var qtyLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +53,8 @@ class BookmarkViewController: UIViewController {
         tableView.reloadData()
         
         //get
-        qtyLabel.text = "\(tableView.numberOfRows(inSection: 0)) palavras"
+        //qtyLabel.text = "\(tableView.numberOfRows(inSection: 0)) palavras"
+        //MISSING IF/ELSE FOR PLURAL!!
     }
 }
 

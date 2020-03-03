@@ -41,12 +41,11 @@ class SearchViewController: UIViewController {
         //trigger UITableViewDataSource
         tableView.dataSource = self
         
-        //trigger UITableViewDelegate (disable since its only an example
+        //trigger UITableViewDelegate
         tableView.delegate = self
         
         navigationItem.searchController = searchController
         
-    
     }
     
     func filterContentForSearchText(searchText: String, scope: String = "Tudo") {
@@ -153,16 +152,27 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         //will print cell that was tapped on
-        print(indexPath.row)
+        //print(indexPath.row)
         
         //deselect row
         tableView.deselectRow(at: indexPath, animated: true)
         
         //send to DetailViewController
         let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
-        vc?.ptWord = data[indexPath.row].pt
-        vc?.trWord = data[indexPath.row].translation
-        vc?.laWord = "Português > \(data[indexPath.row].language)"
+        if isFiltering() {
+            vc?.ptWord = filteredWords[indexPath.row].pt
+            vc?.trWord = filteredWords[indexPath.row].translation
+            vc?.laWord = filteredWords[indexPath.row].language
+            vc?.laWord = "Português > \(filteredWords[indexPath.row].language)"
+            vc?.laHolder = filteredWords[indexPath.row].language
+        } else {
+            vc?.ptWord = data[indexPath.row].pt
+            vc?.trWord = data[indexPath.row].translation
+            vc?.laWord = data[indexPath.row].language
+            vc?.laWord = "Português > \(data[indexPath.row].language)"
+            vc?.laHolder = data[indexPath.row].language
+        }
+        
         self.navigationController?.pushViewController(vc!, animated: true)
     }
 }

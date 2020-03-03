@@ -55,9 +55,12 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>ProximaNova Bold.otf</string>
-		<string>ProximaNova Light.otf</string>
-		<string>ProximaNova Semibold.otf</string>
+		<string>ChronicleDeck-Black.otf</string>
+		<string>ChronicleDeck-Bold.otf</string>
+		<string>ChronicleDeck-Italic.otf</string>
+		<string>ChronicleDeck-Roman.otf</string>
+		<string>ChronicleDeck-Semibold.otf</string>
+		<string>Laura Worthington - CharcuterieOrnaments.otf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

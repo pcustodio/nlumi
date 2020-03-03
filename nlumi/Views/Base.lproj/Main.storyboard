@@ -7,6 +7,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="ChronicleDeck-Black.otf">
+            <string>ChronicleDeck-Black</string>
+        </array>
+        <array key="ChronicleDeck-Bold.otf">
+            <string>ChronicleDeck-Bold</string>
+        </array>
+        <array key="ChronicleDeck-Roman.otf">
+            <string>ChronicleDeck-Roman</string>
+        </array>
         <array key="ProximaNova Bold.otf">
             <string>ProximaNova-Bold</string>
         </array>
@@ -27,7 +36,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qDu-Yo-f2U">
-                                <rect key="frame" x="0.0" y="132" width="414" height="764"/>
+                                <rect key="frame" x="0.0" y="98" width="414" height="788"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BookmarkCell" textLabel="v2q-IV-Ofn" detailTextLabel="gE6-xh-2Bs" style="IBUITableViewCellStyleSubtitle" id="Ytq-YZ-dK7" customClass="MyTableViewCell" customModule="nlumi" customModuleProvider="target">
@@ -38,16 +47,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v2q-IV-Ofn">
-                                                    <rect key="frame" x="20" y="9" width="27.5" height="14"/>
+                                                    <rect key="frame" x="20" y="6" width="28.5" height="17.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gE6-xh-2Bs">
-                                                    <rect key="frame" x="20" y="23" width="30" height="12"/>
+                                                    <rect key="frame" x="20" y="23.5" width="33" height="15.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -57,23 +66,13 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edj-xh-LFI">
-                                <rect key="frame" x="20" y="88" width="374" height="14"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="qDu-Yo-f2U" firstAttribute="leading" secondItem="QmJ-ma-CmB" secondAttribute="leading" id="8MO-Pr-MV0"/>
-                            <constraint firstItem="edj-xh-LFI" firstAttribute="leading" secondItem="QmJ-ma-CmB" secondAttribute="leading" constant="20" id="9bu-qC-jhv"/>
-                            <constraint firstItem="qDu-Yo-f2U" firstAttribute="top" secondItem="edj-xh-LFI" secondAttribute="bottom" constant="30" id="Qgh-D1-tu6"/>
+                            <constraint firstItem="qDu-Yo-f2U" firstAttribute="top" secondItem="QmJ-ma-CmB" secondAttribute="top" constant="10" id="J2l-CN-eE4"/>
                             <constraint firstItem="qDu-Yo-f2U" firstAttribute="trailing" secondItem="QmJ-ma-CmB" secondAttribute="trailing" id="WtN-IM-YNP"/>
-                            <constraint firstAttribute="bottom" secondItem="qDu-Yo-f2U" secondAttribute="bottom" id="e49-aE-Iom"/>
-                            <constraint firstItem="qDu-Yo-f2U" firstAttribute="top" secondItem="edj-xh-LFI" secondAttribute="bottom" constant="30" id="fKf-P9-YSS"/>
-                            <constraint firstItem="edj-xh-LFI" firstAttribute="top" secondItem="QmJ-ma-CmB" secondAttribute="top" id="kte-gv-VIS"/>
-                            <constraint firstItem="QmJ-ma-CmB" firstAttribute="trailing" secondItem="edj-xh-LFI" secondAttribute="trailing" constant="20" id="xVn-bH-NZE"/>
+                            <constraint firstAttribute="bottom" secondItem="qDu-Yo-f2U" secondAttribute="bottom" constant="10" id="e49-aE-Iom"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QmJ-ma-CmB"/>
                     </view>
@@ -82,7 +81,6 @@
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="qtyLabel" destination="edj-xh-LFI" id="lGE-RQ-dJ5"/>
                         <outlet property="tableView" destination="qDu-Yo-f2U" id="09B-yj-KQz"/>
                         <segue destination="tgG-Bb-x02" kind="show" identifier="showBookmarkDetail" id="05f-MB-dpA"/>
                     </connections>
@@ -99,13 +97,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Português" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9R-zb-fdt">
-                                <rect key="frame" x="20" y="269" width="374" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Translation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmV-eX-VNC">
                                 <rect key="frame" x="20" y="359" width="374" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -124,6 +115,13 @@
                                 <rect key="frame" x="169" y="399" width="76" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Português" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9R-zb-fdt">
+                                <rect key="frame" x="20" y="268" width="374" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -155,32 +153,32 @@
             <objects>
                 <viewController id="ELU-zZ-eUz" customClass="SearchViewController" customModule="nlumi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xbP-qB-BZg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iM9-oB-uwd">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="WordCell" textLabel="JKu-Bh-1IY" detailTextLabel="6Ph-5L-1HY" style="IBUITableViewCellStyleSubtitle" id="MnT-TK-xns" customClass="MyTableViewCell" customModule="nlumi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="46.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MnT-TK-xns" id="354-tW-bE1">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="46.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JKu-Bh-1IY">
-                                                    <rect key="frame" x="20" y="7" width="26.5" height="16.5"/>
+                                                    <rect key="frame" x="20" y="10" width="33.5" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="ChronicleDeck-Bold" family="Chronicle Deck" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Ph-5L-1HY">
-                                                    <rect key="frame" x="20" y="23.5" width="30.5" height="14"/>
+                                                    <rect key="frame" x="20" y="25" width="34" height="13"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="ChronicleDeck-Roman" family="Chronicle Deck" pointSize="13"/>
+                                                    <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -192,7 +190,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="MXR-Yi-mL5" firstAttribute="bottom" secondItem="iM9-oB-uwd" secondAttribute="bottom" id="Gdd-co-baP"/>
+                            <constraint firstAttribute="bottom" secondItem="iM9-oB-uwd" secondAttribute="bottom" constant="10" id="Gdd-co-baP"/>
                             <constraint firstItem="MXR-Yi-mL5" firstAttribute="trailing" secondItem="iM9-oB-uwd" secondAttribute="trailing" id="QvF-9A-eZb"/>
                             <constraint firstItem="iM9-oB-uwd" firstAttribute="leading" secondItem="MXR-Yi-mL5" secondAttribute="leading" id="Zha-Gu-8Kj"/>
                             <constraint firstItem="iM9-oB-uwd" firstAttribute="top" secondItem="MXR-Yi-mL5" secondAttribute="top" id="hV4-Bt-wZT"/>
@@ -235,63 +233,84 @@
             <objects>
                 <viewController storyboardIdentifier="DetailViewController" id="6f4-Lf-2pJ" customClass="DetailViewController" customModule="nlumi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nyC-MJ-BvO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ptWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJz-j6-fEy">
-                                <rect key="frame" x="0.0" y="307" width="414" height="36"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddc-Iu-SNd">
-                                <rect key="frame" x="0.0" y="445" width="414" height="23"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="12"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddc-Iu-SNd">
+                                <rect key="frame" x="0.0" y="466" width="414" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title=" Copiar" image="doc.on.doc" catalog="system">
-                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="light"/>
                                 </state>
                                 <connections>
                                     <action selector="copyLabel:" destination="6f4-Lf-2pJ" eventType="touchUpInside" id="hxG-da-htl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="laWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzo-IS-E3v">
-                                <rect key="frame" x="0.0" y="243" width="414" height="14"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="14"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="laWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzo-IS-E3v">
+                                <rect key="frame" x="0.0" y="285" width="414" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="trWord" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-xi-4c4">
+                                <rect key="frame" x="0.0" y="395" width="414" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChronicleDeck-Bold" family="Chronicle Deck" pointSize="28"/>
+                                <color key="textColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H8E-jL-BeQ">
+                                <rect key="frame" x="195" y="539" width="25" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Animated Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUl-3o-Ebc">
+                                <rect key="frame" x="0.0" y="768" width="414" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gnz-1b-wGx">
+                                <rect key="frame" x="20" y="572" width="374" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" reuseIdentifier="similarCell" textLabel="hml-So-qFd" style="IBUITableViewCellStyleDefault" id="YAJ-XH-IMg">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YAJ-XH-IMg" id="3O4-da-z0v">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hml-So-qFd">
+                                                    <rect key="frame" x="20" y="0.0" width="334" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="ChronicleDeck-Roman" family="Chronicle Deck" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ptWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJz-j6-fEy">
+                                <rect key="frame" x="0.0" y="339" width="414" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChronicleDeck-Black" family="Chronicle Deck" pointSize="38"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animated Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUl-3o-Ebc">
-                                <rect key="frame" x="0.0" y="699" width="414" height="14"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="14"/>
-                                <color key="textColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="trWord" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-xi-4c4">
-                                <rect key="frame" x="0.0" y="363" width="414" height="32"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="32"/>
-                                <color key="textColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="FUl-3o-Ebc" secondAttribute="trailing" id="22H-dO-Bnj"/>
-                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="Rzo-IS-E3v" secondAttribute="trailing" id="6d0-cK-CKA"/>
-                            <constraint firstItem="tJz-j6-fEy" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" id="6uH-D9-BJ6"/>
-                            <constraint firstItem="Ddc-Iu-SNd" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" id="ATJ-Lw-ewp"/>
-                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="KBf-xi-4c4" secondAttribute="trailing" id="BD8-bg-9bN"/>
-                            <constraint firstItem="Ddc-Iu-SNd" firstAttribute="top" secondItem="KBf-xi-4c4" secondAttribute="bottom" constant="50" id="Dfs-6e-cDd"/>
-                            <constraint firstItem="Rzo-IS-E3v" firstAttribute="top" secondItem="wJz-xo-VxJ" secondAttribute="top" constant="155" id="SS7-v5-7ba"/>
-                            <constraint firstItem="FUl-3o-Ebc" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" id="TQK-hU-fdY"/>
-                            <constraint firstItem="Rzo-IS-E3v" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" id="ZKT-4k-HJN"/>
-                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="Ddc-Iu-SNd" secondAttribute="trailing" id="oXU-rI-Ia1"/>
-                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="bottom" secondItem="FUl-3o-Ebc" secondAttribute="bottom" constant="100" id="s0L-w7-fsm"/>
-                            <constraint firstItem="KBf-xi-4c4" firstAttribute="top" secondItem="tJz-j6-fEy" secondAttribute="bottom" constant="20" id="t1r-kJ-ZSg"/>
-                            <constraint firstItem="KBf-xi-4c4" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" id="tSG-Ma-yDe"/>
-                            <constraint firstItem="tJz-j6-fEy" firstAttribute="top" secondItem="Rzo-IS-E3v" secondAttribute="bottom" constant="50" id="yL1-tZ-Sw1"/>
-                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="tJz-j6-fEy" secondAttribute="trailing" id="ygv-AZ-1Oy"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wJz-xo-VxJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="o6G-gv-wNo">
@@ -306,6 +325,7 @@
                         <outlet property="bookmarkLabel" destination="Vqb-pq-ejL" id="rPl-Ok-xjo"/>
                         <outlet property="languageLabel" destination="Rzo-IS-E3v" id="9FQ-BH-OLg"/>
                         <outlet property="ptLabel" destination="tJz-j6-fEy" id="x6m-Ye-lVL"/>
+                        <outlet property="tableView" destination="gnz-1b-wGx" id="KVz-EF-cXD"/>
                         <outlet property="translationLabel" destination="KBf-xi-4c4" id="dD6-UI-qiB"/>
                     </connections>
                 </viewController>
@@ -313,15 +333,23 @@
             </objects>
             <point key="canvasLocation" x="3850.7246376811595" y="843.75"/>
         </scene>
-        <!--Pesquisa-->
+        <!--Navigation Controller-->
         <scene sceneID="hdi-zw-0kE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iDN-3v-fuP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Pesquisa" image="magnifyingglass" catalog="system" id="084-hM-Y3X"/>
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="084-hM-Y3X"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bxW-O7-tEa">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="barTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -337,11 +365,15 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Uet-qN-alW" customClass="AnimatedTabBarController" customModule="nlumi" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8yh-aY-XvE">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="8yh-aY-XvE">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="shadowImage"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="iDN-3v-fuP" kind="relationship" relationship="viewControllers" id="RCi-aQ-Rkf"/>
@@ -376,15 +408,17 @@
             </objects>
             <point key="canvasLocation" x="3016" y="-629"/>
         </scene>
-        <!--Anotações-->
+        <!--Navigation Controller-->
         <scene sceneID="Zf0-Rt-nSR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="74F-KO-FIt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Anotações" image="bookmark" catalog="system" id="XgL-5i-k7I"/>
+                    <tabBarItem key="tabBarItem" title="" image="bookmark" catalog="system" id="XgL-5i-k7I"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P1M-nm-6Ic">
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P1M-nm-6Ic">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="barTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -395,11 +429,11 @@
             </objects>
             <point key="canvasLocation" x="2219" y="117"/>
         </scene>
-        <!--Sobre-->
+        <!--Navigation Controller-->
         <scene sceneID="X3v-nE-aED">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Snh-9P-JX0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Sobre" image="text.alignleft" catalog="system" id="fMY-nf-f1x"/>
+                    <tabBarItem key="tabBarItem" title="" image="text.alignleft" catalog="system" id="fMY-nf-f1x"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eT1-nO-ogd">
