@@ -10,12 +10,13 @@ import UIKit
 
 class AboutViewController: UIViewController {
     
+    @IBOutlet weak var mainTxt: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //large title
         navigationController?.navigationBar.prefersLargeTitles = true
-        
+        mainTxt.sizeToFit()
         
     }
 

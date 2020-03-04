@@ -215,14 +215,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JKu-Bh-1IY">
-                                                    <rect key="frame" x="20" y="7" width="28.5" height="17.5"/>
+                                                    <rect key="frame" x="20" y="10" width="33.5" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChronicleDeck-Bold" family="Chronicle Deck" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Ph-5L-1HY">
-                                                    <rect key="frame" x="20" y="24.5" width="33" height="15.5"/>
+                                                    <rect key="frame" x="20" y="25" width="34" height="13"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChronicleDeck-Roman" family="Chronicle Deck" pointSize="13"/>
                                                     <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -471,7 +471,49 @@
                     <view key="view" contentMode="scaleToFill" id="CcG-cC-OdV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhK-n0-l2v">
+                                <rect key="frame" x="60" y="128" width="294" height="625"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Moçambique é um território marcado pela diversidade de línguas, possuindo oito idiomas diferentes considerados línguas nacionais, a maioria de origem autóctones, do grupo Bantu e outras oriundas do continente asiático. 
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="ChronicleDeck-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Após a independência de Moçambique, 1975, foi institucionalizado a língua portuguesa como oficial, o que significa que órgãos públicos e de ordem oficial teriam que fazer divulgações e noticias em língua portuguesa.
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="ChronicleDeck-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Porém o país ainda passa por um processo de adaptação ao idioma uma vez que em 1975, 80% da população ainda não falava o idioma oficial.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="ChronicleDeck-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rhK-n0-l2v" firstAttribute="top" secondItem="Vde-0p-Qc8" secondAttribute="top" constant="40" id="Wj9-jV-DRM"/>
+                            <constraint firstItem="Vde-0p-Qc8" firstAttribute="trailing" secondItem="rhK-n0-l2v" secondAttribute="trailing" constant="60" id="YQT-t8-zvM"/>
+                            <constraint firstItem="Vde-0p-Qc8" firstAttribute="bottom" secondItem="rhK-n0-l2v" secondAttribute="bottom" constant="60" id="iCx-P6-QTd"/>
+                            <constraint firstItem="rhK-n0-l2v" firstAttribute="leading" secondItem="Vde-0p-Qc8" secondAttribute="leading" constant="60" id="mVh-1y-dKm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Vde-0p-Qc8"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sobre" largeTitleDisplayMode="always" id="L72-jP-e1b">
@@ -486,10 +528,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mainTxt" destination="rhK-n0-l2v" id="f0e-hV-0kX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j70-1a-o1h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3016" y="-629"/>
+            <point key="canvasLocation" x="3015.9420289855075" y="-629.46428571428567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zf0-Rt-nSR">
