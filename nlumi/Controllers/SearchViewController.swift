@@ -45,7 +45,6 @@ class SearchViewController: UIViewController {
         tableView.delegate = self
         
         navigationItem.searchController = searchController
-        
     }
     
     func filterContentForSearchText(searchText: String, scope: String = "Tudo") {

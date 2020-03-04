@@ -105,9 +105,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="laWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t28-fe-WJt">
-                                <rect key="frame" x="177" y="304" width="60" height="17"/>
+                                <rect key="frame" x="107" y="304" width="200" height="17"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="dat-Jw-ByD"/>
+                                    <constraint firstAttribute="width" constant="200" id="dat-Jw-ByD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -134,6 +134,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="light"/>
                                 </state>
                                 <connections>
+                                    <action selector="copyLabel:" destination="tgG-Bb-x02" eventType="touchUpInside" id="E7L-zX-eek"/>
                                     <action selector="copyLabel:" destination="6f4-Lf-2pJ" eventType="touchUpInside" id="zUY-u2-t7S"/>
                                 </connections>
                             </button>
@@ -145,48 +146,27 @@
                                     <constraint firstAttribute="height" constant="1" id="wql-sN-ABn"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="jp1-JY-oDS">
-                                <rect key="frame" x="57" y="562.5" width="300" height="112"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZY-Xk-jog">
+                                <rect key="frame" x="107" y="562.5" width="200" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="112" id="IXk-VM-TDh"/>
-                                    <constraint firstAttribute="width" constant="300" id="dSH-AC-OOc"/>
+                                    <constraint firstAttribute="width" constant="200" id="M0n-m9-eGE"/>
+                                    <constraint firstAttribute="height" constant="44" id="Nhk-oU-L0y"/>
                                 </constraints>
-                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" reuseIdentifier="similarCell" textLabel="Yam-Hm-bCZ" style="IBUITableViewCellStyleDefault" id="uXU-mS-dDl">
-                                        <rect key="frame" x="0.0" y="28" width="300" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uXU-mS-dDl" id="t0L-5x-Wdb">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yam-Hm-bCZ">
-                                                    <rect key="frame" x="16" y="0.0" width="268" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="ChronicleDeck-Roman" family="Chronicle Deck" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                                <fontDescription key="fontDescription" name="ChronicleDeck-Roman" family="Chronicle Deck" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="PmV-eX-VNC" firstAttribute="centerX" secondItem="zRg-E3-Uiw" secondAttribute="centerX" id="1Sa-Vo-qTT"/>
-                            <constraint firstItem="jp1-JY-oDS" firstAttribute="top" secondItem="N58-LC-agr" secondAttribute="bottom" constant="15" id="2Gy-L9-uNl"/>
                             <constraint firstItem="PmV-eX-VNC" firstAttribute="centerY" secondItem="zRg-E3-Uiw" secondAttribute="centerY" id="7uE-ac-akQ"/>
                             <constraint firstItem="I9R-zb-fdt" firstAttribute="top" secondItem="t28-fe-WJt" secondAttribute="bottom" constant="60" id="Fev-DD-AJ2"/>
                             <constraint firstItem="2gv-Nb-asu" firstAttribute="centerX" secondItem="zRg-E3-Uiw" secondAttribute="centerX" id="G7t-0z-Tco"/>
-                            <constraint firstItem="jp1-JY-oDS" firstAttribute="centerX" secondItem="zRg-E3-Uiw" secondAttribute="centerX" id="NQP-ww-2vG"/>
+                            <constraint firstItem="6ZY-Xk-jog" firstAttribute="top" secondItem="N58-LC-agr" secondAttribute="bottom" constant="15" id="NsI-QP-0CJ"/>
                             <constraint firstItem="PmV-eX-VNC" firstAttribute="top" secondItem="I9R-zb-fdt" secondAttribute="bottom" constant="15" id="QuS-Dl-jr8"/>
                             <constraint firstItem="X5A-UI-0nw" firstAttribute="centerX" secondItem="zRg-E3-Uiw" secondAttribute="centerX" id="UmG-Lc-B1b"/>
                             <constraint firstItem="I9R-zb-fdt" firstAttribute="centerX" secondItem="zRg-E3-Uiw" secondAttribute="centerX" id="c1P-68-UrN"/>
+                            <constraint firstItem="6ZY-Xk-jog" firstAttribute="centerX" secondItem="zRg-E3-Uiw" secondAttribute="centerX" id="f6Q-QR-egn"/>
                             <constraint firstItem="N58-LC-agr" firstAttribute="top" secondItem="X5A-UI-0nw" secondAttribute="bottom" constant="30" id="fsB-4Y-1VB"/>
                             <constraint firstItem="t28-fe-WJt" firstAttribute="centerX" secondItem="zRg-E3-Uiw" secondAttribute="centerX" id="hUS-qn-fUQ"/>
                             <constraint firstItem="N58-LC-agr" firstAttribute="centerX" secondItem="zRg-E3-Uiw" secondAttribute="centerX" id="qUS-TA-CdD"/>
@@ -205,6 +185,7 @@
                     <connections>
                         <outlet property="annotationMarker" destination="2gv-Nb-asu" id="8jC-KC-owl"/>
                         <outlet property="bookmarkLabel" destination="KdD-1b-nSg" id="fl8-eI-Rju"/>
+                        <outlet property="dateLabel" destination="6ZY-Xk-jog" id="kpx-TI-kJK"/>
                         <outlet property="languageLabel" destination="t28-fe-WJt" id="HkC-Ft-fKq"/>
                         <outlet property="ptLabel" destination="I9R-zb-fdt" id="byz-eq-mVV"/>
                         <outlet property="translationLabel" destination="PmV-eX-VNC" id="qpx-BT-5cF"/>
@@ -212,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uiH-z3-zXG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3850.7246376811595" y="116.51785714285714"/>
+            <point key="canvasLocation" x="3847.826086956522" y="116.51785714285714"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="6e7-Gc-Lg3">
@@ -234,14 +215,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JKu-Bh-1IY">
-                                                    <rect key="frame" x="20" y="10" width="33.5" height="15"/>
+                                                    <rect key="frame" x="20" y="7" width="28.5" height="17.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChronicleDeck-Bold" family="Chronicle Deck" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Ph-5L-1HY">
-                                                    <rect key="frame" x="20" y="25" width="34" height="13"/>
+                                                    <rect key="frame" x="20" y="24.5" width="33" height="15.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChronicleDeck-Roman" family="Chronicle Deck" pointSize="13"/>
                                                     <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -294,7 +275,7 @@
             </objects>
             <point key="canvasLocation" x="3016" y="844"/>
         </scene>
-        <!--Tradução-->
+        <!--Detail View Controller-->
         <scene sceneID="AxB-bS-OFX">
             <objects>
                 <viewController storyboardIdentifier="DetailViewController" id="6f4-Lf-2pJ" customClass="DetailViewController" customModule="nlumi" customModuleProvider="target" sceneMemberID="viewController">
@@ -303,9 +284,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="laWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzo-IS-E3v">
-                                <rect key="frame" x="177" y="262.5" width="60" height="17"/>
+                                <rect key="frame" x="57" y="262.5" width="300" height="17"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="qpP-Ie-2h2"/>
+                                    <constraint firstAttribute="width" constant="300" id="qpP-Ie-2h2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -410,7 +391,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wJz-xo-VxJ"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Tradução" id="o6G-gv-wNo">
+                    <navigationItem key="navigationItem" id="o6G-gv-wNo">
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="vTu-yH-ren"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="bookmark" catalog="system" id="Vqb-pq-ejL">
                             <connections>

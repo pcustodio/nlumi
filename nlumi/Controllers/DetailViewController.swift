@@ -12,14 +12,11 @@ import CoreData
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var ptLabel: UILabel!
     @IBOutlet weak var translationLabel: UILabel!
     @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var annotationMarker: UILabel!
     @IBOutlet weak var bookmarkLabel: UIBarButtonItem!
-
-    @IBOutlet weak var matchedField: UITextField!
     
     let data = DictionaryLoader().dictionary
     
@@ -28,10 +25,8 @@ class DetailViewController: UIViewController {
     var laWord = ""
     var laHolder = ""
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         //hide nav bar shadow
         self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
@@ -42,16 +37,18 @@ class DetailViewController: UIViewController {
         //remove extraneous empty cells
         tableView.tableFooterView = UIView()
 
-        
         ptLabel.text = ptWord
         translationLabel.text = trWord
         languageLabel.text = laWord
+        
+        retrieveData()
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         annotationMarker.text = ""
+        retrieveData()
     }
 
     @IBAction func addBookmark(_ sender: UIBarButtonItem) {
@@ -64,6 +61,7 @@ class DetailViewController: UIViewController {
             
         } else {
             print("yo we are a favorite atm")
+
             createData()
             annotationMarker.isHidden = false
             self.annotationMarker.alpha = 1
@@ -100,6 +98,12 @@ class DetailViewController: UIViewController {
     //MARK: - Create Data
     func createData(){
         
+        //get date
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM.yyyy"
+        let currentDate = formatter.string(from: date)
+        
         //As we know that container is set up in the AppDelegates so we need to refer that container.
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         
@@ -114,6 +118,7 @@ class DetailViewController: UIViewController {
         user.setValue(ptWord, forKeyPath: "ptNoted")
         user.setValue(trWord, forKeyPath: "trNoted")
         user.setValue(laWord, forKeyPath: "laNoted")
+        user.setValue(currentDate, forKeyPath: "dateNoted")
 
         //Now we have set all the values. The next step is to save them inside the Core Data
         do {
@@ -136,7 +141,7 @@ class DetailViewController: UIViewController {
         
         //Prepare the request of type NSFetchRequest  for the entity
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Annotations")
-
+        
         do {
             let result = try managedContext.fetch(fetchRequest)
             
@@ -144,9 +149,10 @@ class DetailViewController: UIViewController {
             for data in result as! [NSManagedObject] {
                 
                 //check if they are saving
-                print(data.value(forKeyPath: "ptNoted") as! String)
-                print(data.value(forKeyPath: "trNoted") as! String)
-                print(data.value(forKeyPath: "laNoted") as! String)
+//                print(data.value(forKeyPath: "ptNoted") as! String)
+//                print(data.value(forKeyPath: "trNoted") as! String)
+//                print(data.value(forKeyPath: "laNoted") as! String)
+//                print(data.value(forKeyPath: "dateNoted") as! String)
                 
                 //retrieved data is stored translation term
                 let retrievedData = data.value(forKey: "trNoted") as! String
@@ -163,6 +169,7 @@ class DetailViewController: UIViewController {
                 } else {
                     print("Not a Fav")
                     annotationMarker.text = ""
+                    self.bookmarkLabel.image = UIImage(systemName: "bookmark")
                 }
             }
         } catch {
@@ -187,8 +194,14 @@ class DetailViewController: UIViewController {
         {
             let test = try managedContext.fetch(fetchRequest)
             
-            let objectToDelete = test[0] as! NSManagedObject
-            managedContext.delete(objectToDelete)
+            //check if there are items to delete to prevent crash
+            let checkist = test.count
+            if checkist <= 0 {
+                print("blimey")
+            } else {
+                let objectToDelete = test[0] as! NSManagedObject
+                managedContext.delete(objectToDelete)
+            }
             
             //change bookmark icon
             self.bookmarkLabel.image = UIImage(systemName: "bookmark")
@@ -227,19 +240,19 @@ extension DetailViewController: UITableViewDataSource {
         let currentLang = laHolder
         
         var myIndex = 0
+        let data = DictionaryLoader().dictionary
         
         //lets loop through range of json items
         let jsonRange = 0...5
-
         for number in jsonRange {
+            
             //serialWord is the word on each json item
             let serialWord = data[number].pt
             let serialLang = data[number].language
+            
             //if the current word matches a json item and if the language differs we have a match
-  
             if currentWord == serialWord && currentLang != serialLang {
-                print("\(data[number].translation) em \(data[number].language)")
-                
+                //print("\(data[number].translation) em \(data[number].language)")
                 myIndex += 1
                 print(myIndex)
                 if indexPath.row == 0 && myIndex == 1 {
@@ -248,9 +261,7 @@ extension DetailViewController: UITableViewDataSource {
                     cell.textLabel?.text = "\(data[number].translation) (\(data[number].language))"
                 }
             }
-
         }
-        
         return cell
     }
 }

@@ -11,6 +11,7 @@ import CoreData
 
 class BookmarkDetailViewController: UIViewController {
 
+    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var ptLabel: UILabel!
     @IBOutlet weak var translationLabel: UILabel!
     @IBOutlet weak var languageLabel: UILabel!
@@ -20,6 +21,8 @@ class BookmarkDetailViewController: UIViewController {
     var ptWord = ""
     var trWord = ""
     var laWord = ""
+    var laHolder = ""
+    var retrievedDate : String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,9 +30,14 @@ class BookmarkDetailViewController: UIViewController {
         ptLabel.text = ptWord
         translationLabel.text = trWord
         languageLabel.text = laWord
-        annotationMarker.text = ""
     
         retrieveData()
+    
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        annotationMarker.text = ""
     }
 
     @IBAction func addBookmark(_ sender: UIBarButtonItem) {
@@ -37,25 +45,49 @@ class BookmarkDetailViewController: UIViewController {
             print("yo we are a not favorite atm")
             deleteData()
             retrieveData()
+            self.annotationMarker.alpha = 1
+            annotationMarker.isHidden = true
         } else {
             print("yo we are a favorite atm")
             createData()
+            annotationMarker.isHidden = false
+            self.annotationMarker.alpha = 1
             retrieveData()
-            successAnimated()
+            bookSuccessAnimated()
         }
     }
     
-    func successAnimated() {
+    @IBAction func copyLabel(_ sender: UIButton) {
+        UIPasteboard.general.string = trWord
+        annotationMarker.isHidden = false
+        self.annotationMarker.alpha = 1
+        copySuccessAnimated()
+    }
+    
+    func bookSuccessAnimated() {
         //success message
         annotationMarker.text = "Anotado"
-        annotationMarker.isHidden = false
-        UIView.animate(withDuration: 0.75, delay: 1.5, animations: { () -> Void in
+        UIView.animate(withDuration: 0.75, delay: 1.0, animations: { () -> Void in
+            self.annotationMarker.alpha = 0
+        })
+    }
+    
+    func copySuccessAnimated() {
+        //success message
+        annotationMarker.text = "Copiado"
+        UIView.animate(withDuration: 0.75, delay: 1.0, animations: { () -> Void in
             self.annotationMarker.alpha = 0
         })
     }
     
     //MARK: - Create Data
     func createData(){
+        
+        //get date
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM.yyyy"
+        let currentDate = formatter.string(from: date)
         
         //As we know that container is set up in the AppDelegates so we need to refer that container.
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
@@ -71,6 +103,7 @@ class BookmarkDetailViewController: UIViewController {
         user.setValue(ptWord, forKeyPath: "ptNoted")
         user.setValue(trWord, forKeyPath: "trNoted")
         user.setValue(laWord, forKeyPath: "laNoted")
+        user.setValue(currentDate, forKeyPath: "dateNoted")
 
         //Now we have set all the values. The next step is to save them inside the Core Data
         do {
@@ -101,24 +134,27 @@ class BookmarkDetailViewController: UIViewController {
             for data in result as! [NSManagedObject] {
                 
                 //check if they are saving
-                print(data.value(forKeyPath: "ptNoted") as! String)
-                print(data.value(forKeyPath: "trNoted") as! String)
-                print(data.value(forKeyPath: "laNoted") as! String)
+                //print(data.value(forKeyPath: "ptNoted") as! String)
+                //print(data.value(forKeyPath: "trNoted") as! String)
+                //print(data.value(forKeyPath: "laNoted") as! String)
+                //print(data.value(forKeyPath: "dateNoted") as! String)
                 
-                //check if
+                //retrieve values stored
                 let retrievedData = data.value(forKey: "trNoted") as! String
+                let retrievedDate = data.value(forKey: "dateNoted") as! String
+                dateLabel.text = "Anotado em \(retrievedDate)"
                 
                 //if coredata word  matches translated term on screen
                 if retrievedData == "\(trWord)" {
                     
                     //check if is favorite
-                    print("It is a Fav")
+                    //print("It is a Fav")
 
                     //change bookmark icon to filled
                     self.bookmarkLabel.image = UIImage(systemName: "bookmark.fill")
                     
                 } else {
-                    print("Not a Fav")
+                    //print("Not a Fav")
                     annotationMarker.text = ""
                 }
             }

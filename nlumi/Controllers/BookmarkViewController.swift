@@ -124,6 +124,7 @@ extension BookmarkViewController: UITableViewDataSource, UITableViewDelegate {
         vc?.ptWord = (bookmark.value(forKeyPath: "ptNoted") as? String)!
         vc?.trWord = (bookmark.value(forKeyPath: "trNoted") as? String)!
         vc?.laWord = (bookmark.value(forKeyPath: "laNoted") as? String)!
+        vc?.laHolder = (bookmark.value(forKeyPath: "laNoted") as? String)!
         self.navigationController?.pushViewController(vc!, animated: true)
         
     }
