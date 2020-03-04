@@ -19,7 +19,6 @@
 		910800F1240EC2DA00B60CB0 /* ChronicleDeck-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 910800EC240EC2DA00B60CB0 /* ChronicleDeck-Black.otf */; };
 		910800F2240EC2DA00B60CB0 /* ChronicleDeck-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 910800ED240EC2DA00B60CB0 /* ChronicleDeck-Semibold.otf */; };
 		910800F3240EC2DA00B60CB0 /* ChronicleDeck-Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = 910800EE240EC2DA00B60CB0 /* ChronicleDeck-Roman.otf */; };
-		910800F5240EC69F00B60CB0 /* Laura Worthington - CharcuterieOrnaments.otf in Resources */ = {isa = PBXBuildFile; fileRef = 910800F4240EC69F00B60CB0 /* Laura Worthington - CharcuterieOrnaments.otf */; };
 		910A7F2724059AE80023DB72 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A7F2624059AE80023DB72 /* DetailViewController.swift */; };
 		911A77E624054CE8009392F8 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A77E524054CE8009392F8 /* Dictionary.swift */; };
 		911A77E824056249009392F8 /* DictionaryLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911A77E724056249009392F8 /* DictionaryLoader.swift */; };
@@ -45,7 +44,6 @@
 		910800EC240EC2DA00B60CB0 /* ChronicleDeck-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChronicleDeck-Black.otf"; sourceTree = "<group>"; };
 		910800ED240EC2DA00B60CB0 /* ChronicleDeck-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChronicleDeck-Semibold.otf"; sourceTree = "<group>"; };
 		910800EE240EC2DA00B60CB0 /* ChronicleDeck-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChronicleDeck-Roman.otf"; sourceTree = "<group>"; };
-		910800F4240EC69F00B60CB0 /* Laura Worthington - CharcuterieOrnaments.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Laura Worthington - CharcuterieOrnaments.otf"; sourceTree = "<group>"; };
 		910A7F2624059AE80023DB72 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		911A77E524054CE8009392F8 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		911A77E724056249009392F8 /* DictionaryLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryLoader.swift; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 				910800EC240EC2DA00B60CB0 /* ChronicleDeck-Black.otf */,
 				910800EB240EC2D900B60CB0 /* ChronicleDeck-Bold.otf */,
 				910800EA240EC2D900B60CB0 /* ChronicleDeck-Italic.otf */,
-				910800F4240EC69F00B60CB0 /* Laura Worthington - CharcuterieOrnaments.otf */,
 				910800EE240EC2DA00B60CB0 /* ChronicleDeck-Roman.otf */,
 				910800ED240EC2DA00B60CB0 /* ChronicleDeck-Semibold.otf */,
 			);
@@ -207,7 +204,6 @@
 				910800F0240EC2DA00B60CB0 /* ChronicleDeck-Bold.otf in Resources */,
 				910800F3240EC2DA00B60CB0 /* ChronicleDeck-Roman.otf in Resources */,
 				9105D7A8240441A300F3E239 /* LaunchScreen.storyboard in Resources */,
-				910800F5240EC69F00B60CB0 /* Laura Worthington - CharcuterieOrnaments.otf in Resources */,
 				9105D7B22404502E00F3E239 /* dictionary.json in Resources */,
 				9105D7A5240441A300F3E239 /* Assets.xcassets in Resources */,
 				910800F1240EC2DA00B60CB0 /* ChronicleDeck-Black.otf in Resources */,
