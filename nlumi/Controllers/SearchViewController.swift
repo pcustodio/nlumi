@@ -27,7 +27,7 @@ class SearchViewController: UIViewController {
         s.searchBar.delegate = self
         return s
     }()
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -174,5 +174,7 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
         }
         
         self.navigationController?.pushViewController(vc!, animated: true)
+        
     }
+
 }

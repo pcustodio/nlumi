@@ -16,9 +16,6 @@
         <array key="ChronicleDeck-Roman.otf">
             <string>ChronicleDeck-Roman</string>
         </array>
-        <array key="ProximaNova Bold.otf">
-            <string>ProximaNova-Bold</string>
-        </array>
         <array key="ProximaNova Light.otf">
             <string>ProximaNova-Light</string>
         </array>
@@ -40,21 +37,21 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BookmarkCell" textLabel="v2q-IV-Ofn" detailTextLabel="gE6-xh-2Bs" style="IBUITableViewCellStyleSubtitle" id="Ytq-YZ-dK7" customClass="MyTableViewCell" customModule="nlumi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="51.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ytq-YZ-dK7" id="p3T-XU-vVK">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="51.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v2q-IV-Ofn">
-                                                    <rect key="frame" x="20" y="6" width="28.5" height="17.5"/>
+                                                    <rect key="frame" x="20" y="7.5" width="28.5" height="17.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gE6-xh-2Bs">
-                                                    <rect key="frame" x="20" y="23.5" width="33" height="15.5"/>
+                                                    <rect key="frame" x="20" y="27.5" width="33" height="15.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="13"/>
                                                     <nil key="textColor"/>
@@ -97,36 +94,111 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Translation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmV-eX-VNC">
-                                <rect key="frame" x="20" y="359" width="374" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="trWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmV-eX-VNC">
+                                <rect key="frame" x="160" y="434" width="94.5" height="28.5"/>
+                                <fontDescription key="fontDescription" name="ChronicleDeck-Bold" family="Chronicle Deck" pointSize="28"/>
+                                <color key="textColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anotado Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gv-Nb-asu">
+                                <rect key="frame" x="107" y="769" width="200" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="7CZ-JH-z58"/>
+                                    <constraint firstAttribute="height" constant="14" id="Tdn-nh-gY8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="laWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t28-fe-WJt">
+                                <rect key="frame" x="177" y="304" width="60" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="dat-Jw-ByD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ptWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9R-zb-fdt">
+                                <rect key="frame" x="107" y="381" width="200" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="nRA-Ii-8dj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChronicleDeck-Black" family="Chronicle Deck" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Anotado Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gv-Nb-asu">
-                                <rect key="frame" x="152" y="111" width="111" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t28-fe-WJt">
-                                <rect key="frame" x="169" y="399" width="76" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Português" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9R-zb-fdt">
-                                <rect key="frame" x="20" y="268" width="374" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5A-UI-0nw">
+                                <rect key="frame" x="176" y="492.5" width="62.5" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="NVa-G2-o2W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title=" Copiar" image="doc.on.doc" catalog="system">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="light"/>
+                                </state>
+                                <connections>
+                                    <action selector="copyLabel:" destination="6f4-Lf-2pJ" eventType="touchUpInside" id="zUY-u2-t7S"/>
+                                </connections>
+                            </button>
+                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="N58-LC-agr">
+                                <rect key="frame" x="194.5" y="546.5" width="25" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="DuW-Yt-RYC"/>
+                                    <constraint firstAttribute="height" constant="1" id="wql-sN-ABn"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="jp1-JY-oDS">
+                                <rect key="frame" x="57" y="562.5" width="300" height="112"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="IXk-VM-TDh"/>
+                                    <constraint firstAttribute="width" constant="300" id="dSH-AC-OOc"/>
+                                </constraints>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" reuseIdentifier="similarCell" textLabel="Yam-Hm-bCZ" style="IBUITableViewCellStyleDefault" id="uXU-mS-dDl">
+                                        <rect key="frame" x="0.0" y="28" width="300" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uXU-mS-dDl" id="t0L-5x-Wdb">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yam-Hm-bCZ">
+                                                    <rect key="frame" x="16" y="0.0" width="268" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="ChronicleDeck-Roman" family="Chronicle Deck" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PmV-eX-VNC" firstAttribute="centerX" secondItem="zRg-E3-Uiw" secondAttribute="centerX" id="1Sa-Vo-qTT"/>
+                            <constraint firstItem="jp1-JY-oDS" firstAttribute="top" secondItem="N58-LC-agr" secondAttribute="bottom" constant="15" id="2Gy-L9-uNl"/>
+                            <constraint firstItem="PmV-eX-VNC" firstAttribute="centerY" secondItem="zRg-E3-Uiw" secondAttribute="centerY" id="7uE-ac-akQ"/>
+                            <constraint firstItem="I9R-zb-fdt" firstAttribute="top" secondItem="t28-fe-WJt" secondAttribute="bottom" constant="60" id="Fev-DD-AJ2"/>
+                            <constraint firstItem="2gv-Nb-asu" firstAttribute="centerX" secondItem="zRg-E3-Uiw" secondAttribute="centerX" id="G7t-0z-Tco"/>
+                            <constraint firstItem="jp1-JY-oDS" firstAttribute="centerX" secondItem="zRg-E3-Uiw" secondAttribute="centerX" id="NQP-ww-2vG"/>
+                            <constraint firstItem="PmV-eX-VNC" firstAttribute="top" secondItem="I9R-zb-fdt" secondAttribute="bottom" constant="15" id="QuS-Dl-jr8"/>
+                            <constraint firstItem="X5A-UI-0nw" firstAttribute="centerX" secondItem="zRg-E3-Uiw" secondAttribute="centerX" id="UmG-Lc-B1b"/>
+                            <constraint firstItem="I9R-zb-fdt" firstAttribute="centerX" secondItem="zRg-E3-Uiw" secondAttribute="centerX" id="c1P-68-UrN"/>
+                            <constraint firstItem="N58-LC-agr" firstAttribute="top" secondItem="X5A-UI-0nw" secondAttribute="bottom" constant="30" id="fsB-4Y-1VB"/>
+                            <constraint firstItem="t28-fe-WJt" firstAttribute="centerX" secondItem="zRg-E3-Uiw" secondAttribute="centerX" id="hUS-qn-fUQ"/>
+                            <constraint firstItem="N58-LC-agr" firstAttribute="centerX" secondItem="zRg-E3-Uiw" secondAttribute="centerX" id="qUS-TA-CdD"/>
+                            <constraint firstItem="X5A-UI-0nw" firstAttribute="top" secondItem="PmV-eX-VNC" secondAttribute="bottom" constant="30" id="ro6-k8-K1b"/>
+                            <constraint firstItem="h2o-AX-7Sr" firstAttribute="bottom" secondItem="2gv-Nb-asu" secondAttribute="bottom" constant="30" id="vza-vV-jM6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="h2o-AX-7Sr"/>
                     </view>
                     <navigationItem key="navigationItem" id="FzF-hi-V2D">
@@ -228,7 +300,7 @@
             </objects>
             <point key="canvasLocation" x="3016" y="844"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Tradução-->
         <scene sceneID="AxB-bS-OFX">
             <objects>
                 <viewController storyboardIdentifier="DetailViewController" id="6f4-Lf-2pJ" customClass="DetailViewController" customModule="nlumi" customModuleProvider="target" sceneMemberID="viewController">
@@ -236,60 +308,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddc-Iu-SNd">
-                                <rect key="frame" x="0.0" y="466" width="414" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
-                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title=" Copiar" image="doc.on.doc" catalog="system">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="light"/>
-                                </state>
-                                <connections>
-                                    <action selector="copyLabel:" destination="6f4-Lf-2pJ" eventType="touchUpInside" id="hxG-da-htl"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="laWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzo-IS-E3v">
-                                <rect key="frame" x="0.0" y="285" width="414" height="14"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="laWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzo-IS-E3v">
+                                <rect key="frame" x="177" y="262.5" width="60" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="qpP-Ie-2h2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="trWord" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-xi-4c4">
-                                <rect key="frame" x="0.0" y="395" width="414" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="trWord" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-xi-4c4">
+                                <rect key="frame" x="160" y="392.5" width="94.5" height="28.5"/>
                                 <fontDescription key="fontDescription" name="ChronicleDeck-Bold" family="Chronicle Deck" pointSize="28"/>
                                 <color key="textColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H8E-jL-BeQ">
-                                <rect key="frame" x="195" y="539" width="25" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="H8E-jL-BeQ">
+                                <rect key="frame" x="194.5" y="505" width="25" height="1"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="fBL-Em-iqw"/>
+                                    <constraint firstAttribute="width" constant="25" id="wa1-rm-UiN"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Animated Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUl-3o-Ebc">
-                                <rect key="frame" x="0.0" y="768" width="414" height="14"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ptWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJz-j6-fEy">
+                                <rect key="frame" x="107" y="339.5" width="200" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Qf1-nP-2Qb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChronicleDeck-Black" family="Chronicle Deck" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animated Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUl-3o-Ebc">
+                                <rect key="frame" x="107" y="769" width="200" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="AV1-nd-cww"/>
+                                    <constraint firstAttribute="height" constant="14" id="ha1-DN-tVh"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
                                 <color key="textColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gnz-1b-wGx">
-                                <rect key="frame" x="20" y="572" width="374" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="gnz-1b-wGx">
+                                <rect key="frame" x="57" y="521" width="300" height="112"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="FTX-Vp-MOb"/>
+                                    <constraint firstAttribute="height" constant="112" id="xDb-1b-tjm"/>
+                                </constraints>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" reuseIdentifier="similarCell" textLabel="hml-So-qFd" style="IBUITableViewCellStyleDefault" id="YAJ-XH-IMg">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="300" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YAJ-XH-IMg" id="3O4-da-z0v">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hml-So-qFd">
-                                                    <rect key="frame" x="20" y="0.0" width="334" height="44"/>
+                                                    <rect key="frame" x="16" y="0.0" width="268" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChronicleDeck-Roman" family="Chronicle Deck" pointSize="15"/>
                                                     <nil key="textColor"/>
@@ -302,18 +380,44 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ptWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJz-j6-fEy">
-                                <rect key="frame" x="0.0" y="339" width="414" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ChronicleDeck-Black" family="Chronicle Deck" pointSize="38"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddc-Iu-SNd">
+                                <rect key="frame" x="176" y="451" width="62.5" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="5yT-dI-l5Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title=" Copiar" image="doc.on.doc" catalog="system">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="light"/>
+                                </state>
+                                <connections>
+                                    <action selector="copyLabel:" destination="6f4-Lf-2pJ" eventType="touchUpInside" id="hxG-da-htl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gnz-1b-wGx" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="32o-kh-USo"/>
+                            <constraint firstItem="Rzo-IS-E3v" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="6zl-I3-5Qc"/>
+                            <constraint firstItem="Ddc-Iu-SNd" firstAttribute="top" secondItem="KBf-xi-4c4" secondAttribute="bottom" constant="30" id="AhR-y4-Ml4"/>
+                            <constraint firstItem="KBf-xi-4c4" firstAttribute="top" secondItem="tJz-j6-fEy" secondAttribute="bottom" constant="15" id="Ce8-y3-2NZ"/>
+                            <constraint firstItem="H8E-jL-BeQ" firstAttribute="top" secondItem="Ddc-Iu-SNd" secondAttribute="bottom" constant="30" id="Euf-RI-zna"/>
+                            <constraint firstItem="FUl-3o-Ebc" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="IwY-ky-WAl"/>
+                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="bottom" secondItem="FUl-3o-Ebc" secondAttribute="bottom" constant="30" id="NWy-xz-oOu"/>
+                            <constraint firstItem="KBf-xi-4c4" firstAttribute="centerY" secondItem="nyC-MJ-BvO" secondAttribute="centerY" id="Pgr-cn-b79"/>
+                            <constraint firstItem="Ddc-Iu-SNd" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="QSr-2n-KTb"/>
+                            <constraint firstItem="tJz-j6-fEy" firstAttribute="top" secondItem="Rzo-IS-E3v" secondAttribute="bottom" constant="60" id="VNR-xQ-3Dj"/>
+                            <constraint firstItem="gnz-1b-wGx" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="VNk-oc-d4C"/>
+                            <constraint firstItem="gnz-1b-wGx" firstAttribute="top" secondItem="H8E-jL-BeQ" secondAttribute="bottom" constant="15" id="Y5I-rf-Xqr"/>
+                            <constraint firstItem="tJz-j6-fEy" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="eBa-tA-6fA"/>
+                            <constraint firstItem="KBf-xi-4c4" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="ewE-u3-R5l"/>
+                            <constraint firstItem="H8E-jL-BeQ" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="mQ9-rh-9T0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wJz-xo-VxJ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="o6G-gv-wNo">
+                    <navigationItem key="navigationItem" title="Tradução" id="o6G-gv-wNo">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="vTu-yH-ren"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="bookmark" catalog="system" id="Vqb-pq-ejL">
                             <connections>
                                 <action selector="addBookmark:" destination="6f4-Lf-2pJ" id="PlQ-i7-ZeR"/>
@@ -331,7 +435,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cnn-e8-IoL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3850.7246376811595" y="843.75"/>
+            <point key="canvasLocation" x="3850.4000000000001" y="843.32833583208401"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hdi-zw-0kE">
