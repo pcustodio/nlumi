@@ -26,7 +26,6 @@
 		91386A4A2408133600E9B043 /* AnimatedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91386A492408133600E9B043 /* AnimatedTabBarController.swift */; };
 		91AE7010240D151F00EA7078 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE700F240D151F00EA7078 /* AboutViewController.swift */; };
 		91FE69302409536D00FADD53 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE692F2409536D00FADD53 /* BookmarkViewController.swift */; };
-		91FE6932240985D000FADD53 /* BookmarkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FE6931240985D000FADD53 /* BookmarkDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +50,6 @@
 		91386A492408133600E9B043 /* AnimatedTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimatedTabBarController.swift; path = nlumi/Controllers/AnimatedTabBarController.swift; sourceTree = SOURCE_ROOT; };
 		91AE700F240D151F00EA7078 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		91FE692F2409536D00FADD53 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
-		91FE6931240985D000FADD53 /* BookmarkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				91AE700F240D151F00EA7078 /* AboutViewController.swift */,
-				91FE6931240985D000FADD53 /* BookmarkDetailViewController.swift */,
 				91FE692F2409536D00FADD53 /* BookmarkViewController.swift */,
 				910A7F2624059AE80023DB72 /* DetailViewController.swift */,
 				9105D79F240441A100F3E239 /* SearchViewController.swift */,
@@ -224,7 +221,6 @@
 				9105D79C240441A100F3E239 /* AppDelegate.swift in Sources */,
 				91386A232407DE5C00E9B043 /* nlumi.xcdatamodeld in Sources */,
 				91386A4A2408133600E9B043 /* AnimatedTabBarController.swift in Sources */,
-				91FE6932240985D000FADD53 /* BookmarkDetailViewController.swift in Sources */,
 				910A7F2724059AE80023DB72 /* DetailViewController.swift in Sources */,
 				9105D79E240441A100F3E239 /* SceneDelegate.swift in Sources */,
 				91FE69302409536D00FADD53 /* BookmarkViewController.swift in Sources */,

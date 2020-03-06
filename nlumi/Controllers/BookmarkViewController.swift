@@ -55,20 +55,7 @@ class BookmarkViewController: UIViewController {
         
         tableView.reloadData()
         
-        
-        
-        //get
-        //qtyLabel.text = "\(tableView.numberOfRows(inSection: 0)) palavras"
-        //MISSING IF/ELSE FOR PLURAL!!
     }
-    
-//    @IBAction func showAlert(_ sender: Any) {
-//        let alertController = UIAlertController(title: "O que são Anotações?", message:
-//            "Anotações permitem-lhe guardar todas as suas traduções favoritas em um único lugar.", preferredStyle: .alert)
-//        alertController.addAction(UIAlertAction(title: "Continuar", style: .default))
-//
-//        self.present(alertController, animated: true, completion: nil)
-//    }
     
     @IBAction func showEdit(_ sender: Any) {
         self.tableView.isEditing = true
@@ -79,9 +66,7 @@ class BookmarkViewController: UIViewController {
         print("test")
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: "showEdit:")
         self.tableView.isEditing = false
-    
     }
-
 }
 
 
@@ -116,9 +101,17 @@ extension BookmarkViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if bookmarks.count == 0 {
+
+            //display empty bookmarks msg
             self.tableView.setEmptyMessage("Sem anotações")
+            
+            //reset edit button in case there are no more bookmarks
+            navigationItem.rightBarButtonItem?.isEnabled = false
+            
         } else {
             self.tableView.restore()
+            navigationItem.rightBarButtonItem?.isEnabled = true
+            print(bookmarks.count)
         }
         return bookmarks.count
     }
@@ -137,7 +130,7 @@ extension BookmarkViewController: UITableViewDataSource, UITableViewDelegate {
     
     //swipe to delete rows
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-
+        
         let delete = UITableViewRowAction(style: .destructive, title: "Apagar") { (action, indexPath) in
             // delete item at indexPath
             self.bookmarks.remove(at: indexPath.row)
@@ -147,25 +140,4 @@ extension BookmarkViewController: UITableViewDataSource, UITableViewDelegate {
         return [delete]
 
     }
-    
-//    //cell was tapped
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        
-//        //will print cell that was tapped on
-//        print(indexPath.row)
-//        
-//        //deselect row
-//        tableView.deselectRow(at: indexPath, animated: true)
-//        
-//        //send to DetailViewController
-//        let vc = storyboard?.instantiateViewController(withIdentifier: "BookmarkDetailViewController") as? BookmarkDetailViewController
-//
-//        let bookmark = bookmarks[indexPath.row]
-//        vc?.ptWord = (bookmark.value(forKeyPath: "ptNoted") as? String)!
-//        vc?.trWord = (bookmark.value(forKeyPath: "trNoted") as? String)!
-//        vc?.laWord = (bookmark.value(forKeyPath: "laNoted") as? String)!
-//        vc?.laHolder = (bookmark.value(forKeyPath: "laNoted") as? String)!
-//        self.navigationController?.pushViewController(vc!, animated: true)
-//        
-//    }
 }
