@@ -51,6 +51,7 @@ class DetailViewController: UIViewController {
         retrieveData()
     }
 
+
     @IBAction func addBookmark(_ sender: UIBarButtonItem) {
         if self.bookmarkLabel.image == UIImage(systemName: "bookmark.fill") {
             print("yo we are a not favorite atm")

@@ -46,19 +46,8 @@ class SearchViewController: UIViewController {
         //add search field
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
-    }
     
-    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-
-        //ask where it is first tab bar item
-        if self.tabBarController?.selectedIndex == 0 {
-            // your action, e.g.:
-            self.tableView.reloadData()
-            print("selected tab")
-        }
-
     }
-    
     
     func filterContentForSearchText(searchText: String, scope: String = "Tudo") {
         filteredWords = data.filter({ (dictionary: Dictionary) -> Bool in

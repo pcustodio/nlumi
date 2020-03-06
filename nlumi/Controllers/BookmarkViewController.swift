@@ -126,7 +126,7 @@ extension BookmarkViewController: UITableViewDataSource, UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         //send to DetailViewController
-        let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: "BookmarkDetailViewController") as? BookmarkDetailViewController
 
         let bookmark = bookmarks[indexPath.row]
         vc?.ptWord = (bookmark.value(forKeyPath: "ptNoted") as? String)!
