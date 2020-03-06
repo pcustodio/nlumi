@@ -47,6 +47,7 @@ class BookmarkDetailViewController: UIViewController {
             retrieveData()
             self.annotationMarker.alpha = 1
             annotationMarker.isHidden = true
+            dateLabel.text = "Anotação removida"
         } else {
             print("yo we are a favorite atm")
             createData()

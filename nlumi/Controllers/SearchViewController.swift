@@ -23,11 +23,10 @@ class SearchViewController: UIViewController {
         s.searchBar.placeholder = "Pesquisar termos"
         s.searchBar.sizeToFit()
         s.searchBar.searchBarStyle = .prominent
-        s.searchBar.scopeButtonTitles = ["Tudo", "Changana", "Ronga", "Macua"]
+        s.searchBar.scopeButtonTitles = ["Tudo", "Changana", "Xironga", "Macua"]
         s.searchBar.delegate = self
         return s
     }()
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,8 +43,22 @@ class SearchViewController: UIViewController {
         //trigger UITableViewDelegate
         tableView.delegate = self
         
+        //add search field
         navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
     }
+    
+    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+
+        //ask where it is first tab bar item
+        if self.tabBarController?.selectedIndex == 0 {
+            // your action, e.g.:
+            self.tableView.reloadData()
+            print("selected tab")
+        }
+
+    }
+    
     
     func filterContentForSearchText(searchText: String, scope: String = "Tudo") {
         filteredWords = data.filter({ (dictionary: Dictionary) -> Bool in
@@ -67,7 +80,6 @@ class SearchViewController: UIViewController {
         let searchBarScopeIsFiltering = searchController.searchBar.selectedScopeButtonIndex != 0
         return searchController.isActive && (!isSearchBarEmpty() || searchBarScopeIsFiltering)
     }
-    
 }
 
 
@@ -141,7 +153,7 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
         let language = currentWord.language
 
         cell.textLabel?.text = "\(pt)"
-        cell.detailTextLabel?.text = "\(translate) (em \(language))"
+        cell.detailTextLabel?.text = "\(translate)"
         
         return cell
         
@@ -175,5 +187,4 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
         self.navigationController?.pushViewController(vc!, animated: true)
         
     }
-
 }

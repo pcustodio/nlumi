@@ -1,32 +1,157 @@
 [
   {
-      "pt": "Amigo",
-      "translation": "test1",
-      "language": "Changana",
+    "pt": "Aba",
+    "translation": "(li-ti) lipapa",
+    "language": "Xironga"
   },
   {
-      "pt": "Coruja",
-      "translation": "Esisi, Kurukutu",
-      "language": "Macua",
+    "pt": "Abafar",
+    "translation": "ku-kupumeta",
+    "language": "Xironga"
   },
   {
-      "pt": "Amigo",
-      "translation": "test3",
-      "language": "Ronga",
+    "pt": "Abaixar (a cabeça)",
+    "translation": "ku-nkunela",
+    "language": "Xironga"
   },
   {
-      "pt": "Montanha",
-      "translation": "test4",
-      "language": "Changana",
+    "pt": "Abaixar-se",
+    "translation": "ku-karjarna",
+    "language": "Xironga"
   },
   {
-      "pt": "Montanha",
-      "translation": "test5",
-      "language": "Macua",
+    "pt": "Abaixo",
+    "translation": "hansi",
+    "language": "Xironga"
   },
   {
-      "pt": "Montanha",
-      "translation": "test6",
-      "language": "Ronga"
+    "pt": "Abalançar-se",
+    "translation": "ku-titxukumeta",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abalar",
+    "translation": "ku-chekachekisa",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Aba",
+    "translation": "(mu) nxiornulo",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abalroar",
+    "translation": "ku-guba",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abanar",
+    "translation": "ku-hunga; ku-pepa",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abanar o lume",
+    "translation": "ku-xlanganyeta",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abandonar",
+    "translation": "ku-siya; ku-chika",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abandonar alguém",
+    "translation": "ku-ndjuluka",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abano",
+    "translation": "(xi-bsi) xihungu",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abarrotar",
+    "translation": "ku-dlhiba",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abatimento (desconto)",
+    "translation": "ku-pumbela",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abcesso",
+    "translation": "(dji-ma) rjumba",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abdomen",
+    "translation": "(dji-rna) khurji",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abegoaria",
+    "translation": "(xi-bsi) xitebele",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abeirar-se",
+    "translation": "ku-chindjekela; ku-chineka; ku-chinekela",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abelha",
+    "translation": "(yi-ti) nyoxi",
+    "language": "Xironga"
+  },
+  {
+    "pt": "A-bel-prazer",
+    "translation": "hi mbilu",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abençoado (ser)",
+    "translation": "ku-kateka",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abençoar",
+    "translation": "ku-kata; ku-katekisa; ku-tobokisa",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Aberto",
+    "translation": "xa ku-pfuliwa",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abertura",
+    "translation": "(inu-mi) forno; (yi-ti) nyangwa",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abdicar",
+    "translation": "ku-kifa; ku-khisa",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abóbora",
+    "translation": "(dji-ma) rjanga; (dji--ma) kwebe; (xi-bsi) xilutana",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abolir",
+    "translation": "ku-yilisa",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abominação",
+    "translation": "(xi-bsi) xikelemu",
+    "language": "Xironga"
+  },
+  {
+    "pt": "Abominar",
+    "translation": "ku-yala",
+    "language": "Xironga"
   }
 ]

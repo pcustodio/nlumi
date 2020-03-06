@@ -68,7 +68,11 @@
                         <viewLayoutGuide key="safeArea" id="QmJ-ma-CmB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Anotações" largeTitleDisplayMode="always" id="JeT-6i-wiB">
-                        <barButtonItem key="rightBarButtonItem" title="Editar" image="questionmark.circle" catalog="system" id="Arn-OM-PYn"/>
+                        <barButtonItem key="rightBarButtonItem" title="Editar" image="questionmark.circle" catalog="system" id="Arn-OM-PYn">
+                            <connections>
+                                <action selector="showAlert:" destination="pB8-G4-sj0" id="vF5-DR-AYM"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -89,7 +93,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="trWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmV-eX-VNC">
-                                <rect key="frame" x="160" y="434" width="94.5" height="28.5"/>
+                                <rect key="frame" x="165" y="431.5" width="84" height="33"/>
                                 <fontDescription key="fontDescription" name="ChronicleDeck-Bold" family="Chronicle Deck" pointSize="28"/>
                                 <color key="textColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -105,7 +109,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="laWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t28-fe-WJt">
-                                <rect key="frame" x="107" y="304" width="200" height="17"/>
+                                <rect key="frame" x="107" y="295" width="200" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="dat-Jw-ByD"/>
                                 </constraints>
@@ -113,17 +117,17 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ptWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9R-zb-fdt">
-                                <rect key="frame" x="107" y="381" width="200" height="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ptWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="I9R-zb-fdt">
+                                <rect key="frame" x="32" y="372" width="350" height="44.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="nRA-Ii-8dj"/>
+                                    <constraint firstAttribute="width" constant="350" id="nRA-Ii-8dj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChronicleDeck-Black" family="Chronicle Deck" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5A-UI-0nw">
-                                <rect key="frame" x="176" y="492.5" width="62.5" height="24"/>
+                                <rect key="frame" x="176" y="494.5" width="62.5" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="NVa-G2-o2W"/>
                                 </constraints>
@@ -139,7 +143,7 @@
                                 </connections>
                             </button>
                             <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="N58-LC-agr">
-                                <rect key="frame" x="194.5" y="546.5" width="25" height="1"/>
+                                <rect key="frame" x="194.5" y="548.5" width="25" height="1"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="DuW-Yt-RYC"/>
@@ -147,7 +151,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZY-Xk-jog">
-                                <rect key="frame" x="107" y="562.5" width="200" height="44"/>
+                                <rect key="frame" x="107" y="564.5" width="200" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="M0n-m9-eGE"/>
                                     <constraint firstAttribute="height" constant="44" id="Nhk-oU-L0y"/>
@@ -207,25 +211,32 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="WordCell" textLabel="JKu-Bh-1IY" detailTextLabel="6Ph-5L-1HY" style="IBUITableViewCellStyleSubtitle" id="MnT-TK-xns" customClass="MyTableViewCell" customModule="nlumi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="46.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="0.0" reuseIdentifier="WordCell" textLabel="JKu-Bh-1IY" detailTextLabel="6Ph-5L-1HY" style="IBUITableViewCellStyleSubtitle" id="MnT-TK-xns" customClass="MyTableViewCell" customModule="nlumi" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="51.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MnT-TK-xns" id="354-tW-bE1">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="46.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="51.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JKu-Bh-1IY">
-                                                    <rect key="frame" x="20" y="10" width="33.5" height="15"/>
+                                                    <rect key="frame" x="20" y="9" width="35.5" height="16"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="ChronicleDeck-Bold" family="Chronicle Deck" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="ChronicleDeck-Bold" family="Chronicle Deck" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Ph-5L-1HY">
-                                                    <rect key="frame" x="20" y="25" width="34" height="13"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Ph-5L-1HY">
+                                                    <rect key="frame" x="20" y="26" width="34" height="16"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="ChronicleDeck-Roman" family="Chronicle Deck" pointSize="13"/>
-                                                    <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Detail">
+                                                            <attributes>
+                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                <font key="NSFont" size="13" name="ChronicleDeck-Roman"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -284,7 +295,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="laWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzo-IS-E3v">
-                                <rect key="frame" x="57" y="262.5" width="300" height="17"/>
+                                <rect key="frame" x="57" y="253.5" width="300" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="qpP-Ie-2h2"/>
                                 </constraints>
@@ -293,23 +304,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="trWord" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-xi-4c4">
-                                <rect key="frame" x="160" y="392.5" width="94.5" height="28.5"/>
+                                <rect key="frame" x="165" y="390" width="84" height="33"/>
                                 <fontDescription key="fontDescription" name="ChronicleDeck-Bold" family="Chronicle Deck" pointSize="28"/>
                                 <color key="textColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="H8E-jL-BeQ">
-                                <rect key="frame" x="194.5" y="505" width="25" height="1"/>
+                                <rect key="frame" x="194.5" y="507" width="25" height="1"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="fBL-Em-iqw"/>
                                     <constraint firstAttribute="width" constant="25" id="wa1-rm-UiN"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ptWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJz-j6-fEy">
-                                <rect key="frame" x="107" y="339.5" width="200" height="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ptWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="tJz-j6-fEy">
+                                <rect key="frame" x="32" y="330.5" width="350" height="44.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Qf1-nP-2Qb"/>
+                                    <constraint firstAttribute="width" constant="350" id="Qf1-nP-2Qb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChronicleDeck-Black" family="Chronicle Deck" pointSize="38"/>
                                 <nil key="textColor"/>
@@ -326,7 +337,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="gnz-1b-wGx">
-                                <rect key="frame" x="57" y="521" width="300" height="112"/>
+                                <rect key="frame" x="57" y="523" width="300" height="112"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="FTX-Vp-MOb"/>
@@ -356,7 +367,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddc-Iu-SNd">
-                                <rect key="frame" x="176" y="451" width="62.5" height="24"/>
+                                <rect key="frame" x="176" y="453" width="62.5" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="5yT-dI-l5Y"/>
                                 </constraints>
@@ -426,9 +437,6 @@
                         <textAttributes key="titleTextAttributes">
                             <color key="textShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="clip" value="YES"/>
-                        </userDefinedRuntimeAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -479,28 +487,11 @@
                                 </accessibility>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Moçambique é um território marcado pela diversidade de línguas, possuindo oito idiomas diferentes considerados línguas nacionais, a maioria de origem autóctones, do grupo Bantu e outras oriundas do continente asiático. 
-</string>
+                                        <string key="content">Moçambique é um território marcado pela diversidade de línguas, possuindo oito idiomas diferentes considerados línguas nacionais, a maioria de origem autóctones, do grupo Bantu e outras oriundas do continente asiático. </string>
                                         <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="16" name="ChronicleDeck-Roman"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-Após a independência de Moçambique, 1975, foi institucionalizado a língua portuguesa como oficial, o que significa que órgãos públicos e de ordem oficial teriam que fazer divulgações e noticias em língua portuguesa.
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="ChronicleDeck-Roman"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Porém o país ainda passa por um processo de adaptação ao idioma uma vez que em 1975, 80% da população ainda não falava o idioma oficial.</string>
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="ChronicleDeck-Roman"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>

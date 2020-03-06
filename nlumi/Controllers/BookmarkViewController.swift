@@ -56,6 +56,14 @@ class BookmarkViewController: UIViewController {
         //qtyLabel.text = "\(tableView.numberOfRows(inSection: 0)) palavras"
         //MISSING IF/ELSE FOR PLURAL!!
     }
+    
+    @IBAction func showAlert(_ sender: Any) {
+        let alertController = UIAlertController(title: "O que são Anotações?", message:
+            "Anotações permitem-lhe guardar todas as suas traduções favoritas em um único lugar.", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Continuar", style: .default))
+
+        self.present(alertController, animated: true, completion: nil)
+    }
 }
 
 
@@ -118,7 +126,7 @@ extension BookmarkViewController: UITableViewDataSource, UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         //send to DetailViewController
-        let vc = storyboard?.instantiateViewController(withIdentifier: "BookmarkDetailViewController") as? BookmarkDetailViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
 
         let bookmark = bookmarks[indexPath.row]
         vc?.ptWord = (bookmark.value(forKeyPath: "ptNoted") as? String)!
