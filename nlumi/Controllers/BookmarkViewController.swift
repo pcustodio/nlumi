@@ -105,9 +105,11 @@ extension BookmarkViewController: UITableViewDataSource, UITableViewDelegate {
 
             //display empty bookmarks msg
             self.tableView.setEmptyMessage("Sem anotações")
-            
+            self.editButton.title = "Editar"
+            self.editButton.isEnabled = false
         } else {
             self.tableView.restore()
+            self.editButton.isEnabled = true
             print(bookmarks.count)
         }
         return bookmarks.count
@@ -141,7 +143,6 @@ extension BookmarkViewController: UITableViewDataSource, UITableViewDelegate {
             {
                 print(error)
             }
-            
         }
     }
 }
