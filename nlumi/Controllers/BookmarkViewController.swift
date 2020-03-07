@@ -58,7 +58,7 @@ class BookmarkViewController: UIViewController {
         
     }
     
-    // Edit/Done btn
+    // Edit Done btn
     @IBAction func showEdit(_ sender: UIBarButtonItem) {
         tableView.setEditing(!tableView.isEditing, animated: true)
 
@@ -106,12 +106,12 @@ extension BookmarkViewController: UITableViewDataSource, UITableViewDelegate {
             //display empty bookmarks msg
             self.tableView.setEmptyMessage("Sem anotações")
             
-            //reset edit button in case there are no more bookmarks
-            navigationItem.rightBarButtonItem?.isEnabled = false
+            //set edit btn
+            self.editButton.title = "Editar"
+        
             
         } else {
             self.tableView.restore()
-            navigationItem.rightBarButtonItem?.isEnabled = true
             print(bookmarks.count)
         }
         return bookmarks.count
