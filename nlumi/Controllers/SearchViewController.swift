@@ -143,7 +143,13 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
 
         cell.textLabel?.text = "\(pt)"
         cell.detailTextLabel?.text = "\(translate)"
-        
+        if language == "Macua" {
+            cell.imageView?.image = UIImage(named: "lang_icon_macua")
+        } else if language == "Xironga" {
+            cell.imageView?.image = UIImage(named: "lang_icon_xironga")
+        } else if language == "changana" {
+            cell.imageView?.image = UIImage(named: "lang_icon_changana")
+        }
         return cell
         
     }

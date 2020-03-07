@@ -110,7 +110,7 @@ extension BookmarkViewController: UITableViewDataSource, UITableViewDelegate {
         } else {
             self.tableView.restore()
             self.editButton.isEnabled = true
-            print(bookmarks.count)
+            //print(bookmarks.count)
         }
         return bookmarks.count
     }
@@ -118,11 +118,26 @@ extension BookmarkViewController: UITableViewDataSource, UITableViewDelegate {
     //create our cell
     //indexpath indicates which cell to display on each TableView row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
+        
 
         let bookmark = bookmarks[indexPath.row]
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "BookmarkCell", for: indexPath)
+        
         cell.textLabel?.text = bookmark.value(forKeyPath: "ptNoted") as? String
         cell.detailTextLabel?.text = bookmark.value(forKeyPath: "trNoted") as? String
+        
+        let language = bookmark.value(forKeyPath: "laNoted") as? String
+        print(language)
+        if language == "Português > Macua" {
+            cell.imageView?.image = UIImage(named: "lang_icon_macua")
+        } else if language == "Português > Xironga" {
+            cell.imageView?.image = UIImage(named: "lang_icon_xironga")
+        } else if language == "Português > Changana" {
+            cell.imageView?.image = UIImage(named: "lang_icon_changana")
+        }
         return cell
     }
     
