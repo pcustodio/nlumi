@@ -15,6 +15,7 @@ class BookmarkViewController: UIViewController {
     var barButton: UIBarButtonItem!
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var editButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,16 +58,17 @@ class BookmarkViewController: UIViewController {
         
     }
     
-    @IBAction func showEdit(_ sender: Any) {
-        self.tableView.isEditing = true
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: "showCancel:")
+    @IBAction func showEdit(_ sender: UIBarButtonItem) {
+        tableView.setEditing(!tableView.isEditing, animated: true)
+
+        if tableView.isEditing {
+            self.editButton.title = "Concluir"
+        } else {
+            self.editButton.title = "Editar"
+        }
     }
     
-    @IBAction func showCancel(_ sender: Any) {
-        print("test")
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: "showEdit:")
-        self.tableView.isEditing = false
-    }
+    
 }
 
 

@@ -75,14 +75,15 @@
                         <viewLayoutGuide key="safeArea" id="QmJ-ma-CmB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Anotações" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="JeT-6i-wiB">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="edit" id="Arn-OM-PYn">
+                        <barButtonItem key="rightBarButtonItem" title="Editar" style="plain" id="Arn-OM-PYn">
                             <connections>
-                                <action selector="showEdit:" destination="pB8-G4-sj0" id="7x0-hP-5qy"/>
+                                <action selector="showEdit:" destination="pB8-G4-sj0" id="XuS-Ks-m71"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="editButton" destination="Arn-OM-PYn" id="dqH-cD-BHK"/>
                         <outlet property="tableView" destination="qDu-Yo-f2U" id="09B-yj-KQz"/>
                     </connections>
                 </viewController>
@@ -110,14 +111,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JKu-Bh-1IY">
-                                                    <rect key="frame" x="20" y="9" width="35.5" height="16"/>
+                                                    <rect key="frame" x="20" y="6" width="30" height="19"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChronicleDeck-Bold" family="Chronicle Deck" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Ph-5L-1HY">
-                                                    <rect key="frame" x="20" y="26" width="34" height="16"/>
+                                                    <rect key="frame" x="20" y="26" width="33" height="18.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Detail">
