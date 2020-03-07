@@ -58,6 +58,7 @@ class BookmarkViewController: UIViewController {
         
     }
     
+    // Edit/Done btn
     @IBAction func showEdit(_ sender: UIBarButtonItem) {
         tableView.setEditing(!tableView.isEditing, animated: true)
 
@@ -67,8 +68,6 @@ class BookmarkViewController: UIViewController {
             self.editButton.title = "Editar"
         }
     }
-    
-    
 }
 
 
@@ -129,17 +128,14 @@ extension BookmarkViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-    
-    //swipe to delete rows
-    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        
-        let delete = UITableViewRowAction(style: .destructive, title: "Apagar") { (action, indexPath) in
-            // delete item at indexPath
-            self.bookmarks.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
+    //swipe to delete rows in Coredata
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == UITableViewCell.EditingStyle.delete) {
+            let recipe = bookmarks.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+            guard let moc = recipe.managedObjectContext else { return }
+            moc.delete(recipe)
+            moc.processPendingChanges()
         }
-
-        return [delete]
-
     }
 }
