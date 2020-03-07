@@ -106,10 +106,6 @@ extension BookmarkViewController: UITableViewDataSource, UITableViewDelegate {
             //display empty bookmarks msg
             self.tableView.setEmptyMessage("Sem anotações")
             
-            //set edit btn
-            self.editButton.title = "Editar"
-        
-            
         } else {
             self.tableView.restore()
             print(bookmarks.count)
@@ -131,11 +127,21 @@ extension BookmarkViewController: UITableViewDataSource, UITableViewDelegate {
     //swipe to delete rows in Coredata
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == UITableViewCell.EditingStyle.delete) {
-            let recipe = bookmarks.remove(at: indexPath.row)
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+            let managedContext = appDelegate.persistentContainer.viewContext
+            let bookmark = bookmarks.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
-            guard let moc = recipe.managedObjectContext else { return }
-            moc.delete(recipe)
+            guard let moc = bookmark.managedObjectContext else { return }
+            moc.delete(bookmark)
             moc.processPendingChanges()
+            do{
+                try managedContext.save()
+            }
+            catch
+            {
+                print(error)
+            }
+            
         }
     }
 }
