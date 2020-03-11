@@ -46,7 +46,6 @@ public class DictionaryLoader {
     //sort our data
     func sort() {
         //sort by pt String field in ascending sequence (alphabetically) and ignore accents
-        
         self.dictionary = self.dictionary.sorted { $0.pt.localizedCaseInsensitiveCompare($1.pt) == ComparisonResult.orderedAscending }
     }
     
