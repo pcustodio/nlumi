@@ -46,7 +46,17 @@ class SearchViewController: UIViewController {
         //add search field
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
+    }
     
+    //when user cancels search
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar){
+        if isSearchBarEmpty() {
+            //scroll to top of cell
+            let savedIndex = (tableView.indexPathsForVisibleRows?.first)
+            tableView.scrollToRow(at: savedIndex!, at: .top, animated: true)
+        } else {
+            
+        }
     }
     
     func filterContentForSearchText(searchText: String, scope: String = "Tudo") {
