@@ -130,7 +130,7 @@ extension BookmarkViewController: UITableViewDataSource, UITableViewDelegate {
         cell.detailTextLabel?.text = bookmark.value(forKeyPath: "trNoted") as? String
         
         let language = bookmark.value(forKeyPath: "laNoted") as? String
-        print(language)
+        //print(language)
         if language == "Português > Macua" {
             cell.imageView?.image = UIImage(named: "lang_icon_macua")
         } else if language == "Português > Xironga" {

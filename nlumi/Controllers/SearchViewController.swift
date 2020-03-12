@@ -10,11 +10,12 @@ import UIKit
 
 class SearchViewController: UIViewController {
     
+    @IBOutlet weak var tableViewConstraint: NSLayoutConstraint!
     @IBOutlet weak var tableView: UITableView!
     
     let data = DictionaryLoader().dictionary
     var filteredWords = [Dictionary]()
-        
+       
     //add search bar and configure it
     lazy var searchController: UISearchController = {
         let s = UISearchController(searchResultsController: nil)
@@ -46,6 +47,26 @@ class SearchViewController: UIViewController {
         //add search field
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
+        
+        //position table above keyboard
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillDisappear), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear), name: UIResponder.keyboardWillShowNotification, object: nil)
+
+    }
+    
+    //position table above keyboard
+    @objc func keyboardWillAppear(notification: Notification) {
+        if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+            let keyboardRectangle = keyboardFrame.cgRectValue
+            let keyboardHeight = keyboardRectangle.height
+            tableViewConstraint.constant = keyboardHeight
+            UIView.animate(withDuration: 0.5, animations: {
+                self.view.layoutIfNeeded()
+            })
+        }
+    }
+    @objc func keyboardWillDisappear(notification: Notification) {
+        tableViewConstraint.constant = 0
     }
     
     //when user cancels search
@@ -55,7 +76,8 @@ class SearchViewController: UIViewController {
             let savedIndex = (tableView.indexPathsForVisibleRows?.first)
             tableView.scrollToRow(at: savedIndex!, at: .top, animated: true)
         } else {
-            
+            let indexPath = IndexPath(row: 0, section: 0)
+            self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
         }
     }
     

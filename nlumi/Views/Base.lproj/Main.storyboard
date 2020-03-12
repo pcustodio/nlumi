@@ -79,7 +79,7 @@
                         <viewLayoutGuide key="safeArea" id="QmJ-ma-CmB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Anotações" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="JeT-6i-wiB">
-                        <barButtonItem key="rightBarButtonItem" title="Editar" style="plain" id="Arn-OM-PYn">
+                        <barButtonItem key="rightBarButtonItem" title="Editar" style="done" id="Arn-OM-PYn">
                             <connections>
                                 <action selector="showEdit:" destination="pB8-G4-sj0" id="XuS-Ks-m71"/>
                             </connections>
@@ -104,7 +104,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iM9-oB-uwd">
-                                <rect key="frame" x="0.0" y="88" width="414" height="798"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="0.0" reuseIdentifier="WordCell" textLabel="JKu-Bh-1IY" detailTextLabel="6Ph-5L-1HY" imageView="9xj-Ss-LRk" style="IBUITableViewCellStyleSubtitle" id="MnT-TK-xns" customClass="MyTableViewCell" customModule="nlumi" customModuleProvider="target">
@@ -148,7 +148,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="iM9-oB-uwd" secondAttribute="bottom" constant="10" id="Gdd-co-baP"/>
+                            <constraint firstAttribute="bottom" secondItem="iM9-oB-uwd" secondAttribute="bottom" constant="34" id="Gdd-co-baP"/>
                             <constraint firstItem="MXR-Yi-mL5" firstAttribute="trailing" secondItem="iM9-oB-uwd" secondAttribute="trailing" id="QvF-9A-eZb"/>
                             <constraint firstItem="iM9-oB-uwd" firstAttribute="leading" secondItem="MXR-Yi-mL5" secondAttribute="leading" id="Zha-Gu-8Kj"/>
                             <constraint firstItem="iM9-oB-uwd" firstAttribute="top" secondItem="MXR-Yi-mL5" secondAttribute="top" id="hV4-Bt-wZT"/>
@@ -179,6 +179,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="iM9-oB-uwd" id="lgy-oM-Y0O"/>
+                        <outlet property="tableViewConstraint" destination="Gdd-co-baP" id="NYK-g2-ufa"/>
                         <segue destination="6f4-Lf-2pJ" kind="show" identifier="showDetail" id="JUI-Gv-GaG"/>
                     </connections>
                 </viewController>
