@@ -15,6 +15,12 @@ class SearchViewController: UIViewController {
     
     let data = DictionaryLoader().dictionary
     var filteredWords = [Dictionary]()
+    
+    var sortedFirstLetters: [String] = []
+    var sections: [[Dictionary]] = [[]]
+    
+//    var sortedFilteredFirstLetters: [String] = []
+//    var filteredSections: [[Dictionary]] = [[]]
        
     //add search bar and configure it
     lazy var searchController: UISearchController = {
@@ -51,7 +57,33 @@ class SearchViewController: UIViewController {
         //position table above keyboard
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillDisappear), name: UIResponder.keyboardWillHideNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear), name: UIResponder.keyboardWillShowNotification, object: nil)
-
+        
+        //generate the index from your data
+        let firstLetters = data.map { $0.titleFirstLetter }
+        let uniqueFirstLetters = Array(Set(firstLetters))
+        sortedFirstLetters = uniqueFirstLetters.sorted()
+        
+//        //generate the filtered index from your data
+//        let filtereredFirstLetters = filteredWords.map { $0.titleFirstLetter }
+//        let filteredUniqueFirstLetters = Array(Set(filtereredFirstLetters))
+//        sortedFilteredFirstLetters = filteredUniqueFirstLetters.sorted()
+        
+        //generate sections
+        sections = sortedFirstLetters.map { firstLetter in
+            return data
+                .filter { $0.titleFirstLetter == firstLetter }
+                .sorted { $0.pt.localizedCaseInsensitiveCompare($1.pt) == ComparisonResult.orderedAscending }
+        }
+        
+//        //generate filtered sections
+//        filteredSections = sortedFilteredFirstLetters.map { firstLetter in
+//            return data
+//                .filter { $0.titleFirstLetter == firstLetter }
+//                .sorted { $0.pt.localizedCaseInsensitiveCompare($1.pt) == ComparisonResult.orderedAscending }
+//        }
+        
+        //prevent tableview from not scrolling to the very bottom
+        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 50, right: 0); //values
     }
     
     //position table above keyboard
@@ -147,34 +179,87 @@ extension SearchViewController: UISearchResultsUpdating {
 //MARK: - TableView
 
 extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if isFiltering() {
+//            let searchbar = searchController.searchBar
+//            let label = searchbar.scopeButtonTitles![searchbar.selectedScopeButtonIndex]
+            let label = filteredWords.count
+            return "\(label) resultados"
+        } else {
+            return sortedFirstLetters[section]
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let label = UILabel()
+        let view = UIView()
+        view.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+        label.frame = CGRect(x: 15, y: 0, width: tableView.frame.width , height: 30)
+        view.backgroundColor = .systemGroupedBackground
+        label.highlightedTextColor = .black
+        label.font = UIFont.boldSystemFont(ofSize: 12)
+        label.text = self.tableView(tableView, titleForHeaderInSection: section)
+        view.addSubview(label)
+        return view
+    }
 
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30.0
+    }
+
+
+    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        if isFiltering() {
+            return nil
+        } else {
+            return sortedFirstLetters
+        }
+    }
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        if isFiltering() {
+            return 1
+        } else {
+            return sections.count
+        }
+    }
+    
     //how many rows on TableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //return nr of messages dynamically
-        if isFiltering() {return filteredWords.count}
-        return data.count
+        if isFiltering() {
+            return filteredWords.count
+        } else {
+            return sections[section].count
+        }
     }
     
     //create our cell
     //indexpath indicates which cell to display on each TableView row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath)
-        
-        //filter cells
+
         let currentWord: Dictionary
         if isFiltering() {
+            //show cells based on filtered dictionary
             currentWord = filteredWords[indexPath.row]
+
         } else {
-            currentWord = data[indexPath.row]
+            //show cells based on unfiltered dictionary
+            currentWord = sections[indexPath.section][indexPath.row]
         }
         
-        //display our cell
+        //setup our cell
         let pt = currentWord.pt
         let translate = currentWord.translation
         let language = currentWord.language
-
+        
+        //show cell content
         cell.textLabel?.text = "\(pt)"
         cell.detailTextLabel?.text = "\(translate)"
+        
+        //show language img
         if language == "Macua" {
             cell.imageView?.image = UIImage(named: "lang_icon_macua")
         } else if language == "Xironga" {
@@ -204,14 +289,20 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
             vc?.laWord = "Português > \(filteredWords[indexPath.row].language)"
             vc?.laHolder = filteredWords[indexPath.row].language
         } else {
-            vc?.ptWord = data[indexPath.row].pt
-            vc?.trWord = data[indexPath.row].translation
-            vc?.laWord = data[indexPath.row].language
-            vc?.laWord = "Português > \(data[indexPath.row].language)"
-            vc?.laHolder = data[indexPath.row].language
+            vc?.ptWord = sections[indexPath.section][indexPath.row].pt
+            vc?.trWord = sections[indexPath.section][indexPath.row].translation
+            vc?.laWord = sections[indexPath.section][indexPath.row].language
+            vc?.laWord = "Português > \(sections[indexPath.section][indexPath.row].language)"
+            vc?.laHolder = sections[indexPath.section][indexPath.row].language
         }
         
         self.navigationController?.pushViewController(vc!, animated: true)
-        
+    }
+}
+
+//MARK: - Define the section into which every word belongs
+extension Dictionary {
+    var titleFirstLetter: String {
+        return String(self.pt[self.pt.startIndex]).uppercased().folding(options: .diacriticInsensitive, locale: .current)
     }
 }
