@@ -185,7 +185,7 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
 //            let searchbar = searchController.searchBar
 //            let label = searchbar.scopeButtonTitles![searchbar.selectedScopeButtonIndex]
             let label = filteredWords.count
-            return "\(label) resultados"
+            return "Resultados: \(label)"
         } else {
             return sortedFirstLetters[section]
         }
@@ -196,9 +196,9 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
         let view = UIView()
         view.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
         label.frame = CGRect(x: 15, y: 0, width: tableView.frame.width , height: 30)
-        view.backgroundColor = .systemGroupedBackground
+        view.backgroundColor = UIColor(named: "customGray")
         label.highlightedTextColor = .black
-        label.font = UIFont.boldSystemFont(ofSize: 12)
+        label.font = UIFont.boldSystemFont(ofSize: 11)
         label.text = self.tableView(tableView, titleForHeaderInSection: section)
         view.addSubview(label)
         return view
