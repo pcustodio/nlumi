@@ -45,8 +45,14 @@ class DetailViewController: UIViewController {
         
     }
     
+//    override func viewDidAppear(_ animated: Bool) {
+//        print("viewDidAppear is running")
+//        retrieveData()
+//    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        print("viewWillAppear is running")
         annotationMarker.text = ""
         retrieveData()
     }
@@ -62,11 +68,11 @@ class DetailViewController: UIViewController {
             
         } else {
             print("yo we are a favorite atm")
-
             createData()
+            retrieveData()
             annotationMarker.isHidden = false
             self.annotationMarker.alpha = 1
-            retrieveData()
+            
             bookSuccessAnimated()
         }
     }
@@ -145,6 +151,13 @@ class DetailViewController: UIViewController {
         
         do {
             let result = try managedContext.fetch(fetchRequest)
+            print(result)
+            
+            //if there are no stored items remove 
+            if result.isEmpty {
+                print("there is no stuff")
+                self.bookmarkLabel.image = UIImage(systemName: "bookmark")
+            }
             
             //Loop over CoreData entities
             for data in result as! [NSManagedObject] {
@@ -156,10 +169,10 @@ class DetailViewController: UIViewController {
 //                print(data.value(forKeyPath: "dateNoted") as! String)
                 
                 //retrieved data is stored translation term
-                let retrievedData = data.value(forKey: "trNoted") as! String
+                let retrievedData = data.value(forKey: "ptNoted") as! String
                 
-                //if coredata word  matches translated term on screen
-                if retrievedData == "\(trWord)" {
+                //if coredata word  matches portuguese term on screen
+                if retrievedData.contains("\(ptWord)") == true {
                     
                     //check if is favorite
                     print("It is a Fav")
@@ -169,7 +182,6 @@ class DetailViewController: UIViewController {
                     
                 } else {
                     print("Not a Fav")
-                    annotationMarker.text = ""
                     self.bookmarkLabel.image = UIImage(systemName: "bookmark")
                 }
             }
@@ -177,6 +189,7 @@ class DetailViewController: UIViewController {
             print("Failed")
         }
     }
+
     
     //MARK: - Delete Data
     
