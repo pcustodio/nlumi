@@ -39,14 +39,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v2q-IV-Ofn">
-                                                    <rect key="frame" x="68" y="6" width="30" height="19"/>
+                                                    <rect key="frame" x="68" y="9" width="35.5" height="16"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChronicleDeck-Bold" family="Chronicle Deck" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gE6-xh-2Bs">
-                                                    <rect key="frame" x="68" y="26" width="33" height="18.5"/>
+                                                    <rect key="frame" x="68" y="26" width="34" height="16"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Detail">
@@ -116,14 +116,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JKu-Bh-1IY">
-                                                    <rect key="frame" x="68" y="6" width="30" height="19"/>
+                                                    <rect key="frame" x="68" y="9" width="35.5" height="16"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChronicleDeck-Bold" family="Chronicle Deck" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Ph-5L-1HY">
-                                                    <rect key="frame" x="68" y="26" width="33" height="18.5"/>
+                                                    <rect key="frame" x="68" y="26" width="34" height="16"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Detail">
@@ -197,16 +197,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="laWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzo-IS-E3v">
-                                <rect key="frame" x="57" y="262.5" width="300" height="17"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="qpP-Ie-2h2"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="262.5" width="374" height="17"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="trWord" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-xi-4c4">
-                                <rect key="frame" x="160" y="392.5" width="94.5" height="28.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="trWord" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-xi-4c4">
+                                <rect key="frame" x="20" y="392.5" width="374" height="28.5"/>
                                 <fontDescription key="fontDescription" name="ChronicleDeck-Bold" family="Chronicle Deck" pointSize="28"/>
                                 <color key="textColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -219,11 +216,8 @@
                                     <constraint firstAttribute="width" constant="25" id="wa1-rm-UiN"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ptWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="tJz-j6-fEy">
-                                <rect key="frame" x="32" y="339.5" width="350" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="Qf1-nP-2Qb"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ptWord" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="tJz-j6-fEy">
+                                <rect key="frame" x="20" y="339.5" width="374" height="38"/>
                                 <fontDescription key="fontDescription" name="ChronicleDeck-Black" family="Chronicle Deck" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -239,23 +233,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="gnz-1b-wGx">
-                                <rect key="frame" x="57" y="521" width="300" height="112"/>
+                                <rect key="frame" x="20" y="521" width="374" height="112"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="FTX-Vp-MOb"/>
                                     <constraint firstAttribute="height" constant="112" id="xDb-1b-tjm"/>
                                 </constraints>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" reuseIdentifier="similarCell" textLabel="hml-So-qFd" style="IBUITableViewCellStyleDefault" id="YAJ-XH-IMg">
-                                        <rect key="frame" x="0.0" y="28" width="300" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YAJ-XH-IMg" id="3O4-da-z0v">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hml-So-qFd">
-                                                    <rect key="frame" x="16" y="0.0" width="268" height="44"/>
+                                                    <rect key="frame" x="20" y="0.0" width="334" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChronicleDeck-Roman" family="Chronicle Deck" pointSize="15"/>
                                                     <nil key="textColor"/>
@@ -290,17 +283,25 @@
                             <constraint firstItem="Rzo-IS-E3v" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="6zl-I3-5Qc"/>
                             <constraint firstItem="Ddc-Iu-SNd" firstAttribute="top" secondItem="KBf-xi-4c4" secondAttribute="bottom" constant="30" id="AhR-y4-Ml4"/>
                             <constraint firstItem="KBf-xi-4c4" firstAttribute="top" secondItem="tJz-j6-fEy" secondAttribute="bottom" constant="15" id="Ce8-y3-2NZ"/>
+                            <constraint firstItem="Rzo-IS-E3v" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="DU2-AP-N4l"/>
                             <constraint firstItem="H8E-jL-BeQ" firstAttribute="top" secondItem="Ddc-Iu-SNd" secondAttribute="bottom" constant="30" id="Euf-RI-zna"/>
                             <constraint firstItem="FUl-3o-Ebc" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="IwY-ky-WAl"/>
                             <constraint firstItem="wJz-xo-VxJ" firstAttribute="bottom" secondItem="FUl-3o-Ebc" secondAttribute="bottom" constant="30" id="NWy-xz-oOu"/>
                             <constraint firstItem="KBf-xi-4c4" firstAttribute="centerY" secondItem="nyC-MJ-BvO" secondAttribute="centerY" id="Pgr-cn-b79"/>
                             <constraint firstItem="Ddc-Iu-SNd" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="QSr-2n-KTb"/>
+                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="tJz-j6-fEy" secondAttribute="trailing" constant="20" id="SKh-wo-SWl"/>
                             <constraint firstItem="tJz-j6-fEy" firstAttribute="top" secondItem="Rzo-IS-E3v" secondAttribute="bottom" constant="60" id="VNR-xQ-3Dj"/>
                             <constraint firstItem="gnz-1b-wGx" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="VNk-oc-d4C"/>
                             <constraint firstItem="gnz-1b-wGx" firstAttribute="top" secondItem="H8E-jL-BeQ" secondAttribute="bottom" constant="15" id="Y5I-rf-Xqr"/>
+                            <constraint firstItem="gnz-1b-wGx" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="dLe-FD-Acw"/>
                             <constraint firstItem="tJz-j6-fEy" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="eBa-tA-6fA"/>
                             <constraint firstItem="KBf-xi-4c4" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="ewE-u3-R5l"/>
+                            <constraint firstItem="tJz-j6-fEy" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="fIq-Ab-WOJ"/>
                             <constraint firstItem="H8E-jL-BeQ" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="mQ9-rh-9T0"/>
+                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="gnz-1b-wGx" secondAttribute="trailing" constant="20" id="naa-Wv-xor"/>
+                            <constraint firstItem="KBf-xi-4c4" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="wEc-Ih-YT8"/>
+                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="KBf-xi-4c4" secondAttribute="trailing" constant="20" id="xWQ-kD-1FA"/>
+                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="Rzo-IS-E3v" secondAttribute="trailing" constant="20" id="xgY-Vc-oPl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wJz-xo-VxJ"/>
                     </view>
