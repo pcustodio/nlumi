@@ -11,7 +11,6 @@ import CoreData
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var ptLabel: UILabel!
     @IBOutlet weak var translationLabel: UILabel!
     @IBOutlet weak var languageLabel: UILabel!
@@ -30,12 +29,6 @@ class DetailViewController: UIViewController {
         
         //hide nav bar shadow
         self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
-        
-        //trigger UITableViewDataSource
-        tableView.dataSource = self
-        
-        //remove extraneous empty cells
-        tableView.tableFooterView = UIView()
 
         ptLabel.text = ptWord
         translationLabel.text = trWord
@@ -77,7 +70,7 @@ class DetailViewController: UIViewController {
         }
     }
     
-    @IBAction func copyLabel(_ sender: UIButton) {
+    @IBAction func copyLabel(_ sender: UIBarButtonItem) {
         UIPasteboard.general.string = trWord
         annotationMarker.isHidden = false
         self.annotationMarker.alpha = 1
@@ -232,50 +225,5 @@ class DetailViewController: UIViewController {
         {
             print(error)
         }
-    }
-}
-
-//MARK: - TableView
-
-extension DetailViewController: UITableViewDataSource {
-    //how many rows do we expect in our table view
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
-    }
-    //indexpath is the position: which cell it should display on each row of our table view
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "similarCell", for: indexPath)
-
-        //Find other translations
-        
-        //current word on screen
-        let currentWord = ptWord
-        //current language on screen
-        let currentLang = laHolder
-        
-        var myIndex = 0
-        let data = DictionaryLoader().dictionary
-        
-        //lets loop through range of json items
-        let jsonRange = 0...5
-        for number in jsonRange {
-            
-            //serialWord is the word on each json item
-            let serialWord = data[number].pt
-            let serialLang = data[number].language
-            
-            //if the current word matches a json item and if the language differs we have a match
-            if currentWord == serialWord && currentLang != serialLang {
-                //print("\(data[number].translation) em \(data[number].language)")
-                myIndex += 1
-                print(myIndex)
-                if indexPath.row == 0 && myIndex == 1 {
-                    cell.textLabel?.text = "\(data[number].translation) (\(data[number].language))"
-                } else if indexPath.row == 1 && myIndex == 2 {
-                    cell.textLabel?.text = "\(data[number].translation) (\(data[number].language))"
-                }
-            }
-        }
-        return cell
     }
 }

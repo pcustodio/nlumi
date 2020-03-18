@@ -13,8 +13,8 @@
         <array key="ChronicleDeck-Bold.otf">
             <string>ChronicleDeck-Bold</string>
         </array>
-        <array key="ChronicleDeck-Roman.otf">
-            <string>ChronicleDeck-Roman</string>
+        <array key="ChronicleDeck-Italic.otf">
+            <string>ChronicleDeck-Italic</string>
         </array>
     </customFonts>
     <scenes>
@@ -197,19 +197,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="laWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzo-IS-E3v">
-                                <rect key="frame" x="20" y="262.5" width="374" height="17"/>
+                                <rect key="frame" x="20" y="276" width="374" height="17"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="trWord" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-xi-4c4">
-                                <rect key="frame" x="20" y="392.5" width="374" height="28.5"/>
+                                <rect key="frame" x="20" y="436.5" width="374" height="28.5"/>
                                 <fontDescription key="fontDescription" name="ChronicleDeck-Bold" family="Chronicle Deck" pointSize="28"/>
                                 <color key="textColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="H8E-jL-BeQ">
-                                <rect key="frame" x="194.5" y="505" width="25" height="1"/>
+                                <rect key="frame" x="194.5" y="495" width="25" height="1"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="fBL-Em-iqw"/>
@@ -217,114 +217,81 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ptWord" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="tJz-j6-fEy">
-                                <rect key="frame" x="20" y="339.5" width="374" height="38"/>
+                                <rect key="frame" x="20" y="353" width="374" height="38"/>
                                 <fontDescription key="fontDescription" name="ChronicleDeck-Black" family="Chronicle Deck" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adj." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBx-X4-H34">
+                                <rect key="frame" x="20" y="406" width="374" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pl. ximbini" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYh-qC-TR3">
+                                <rect key="frame" x="20" y="511" width="374" height="15"/>
+                                <fontDescription key="fontDescription" name="ChronicleDeck-Italic" family="Chronicle Deck" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animated Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUl-3o-Ebc">
-                                <rect key="frame" x="107" y="769" width="200" height="14"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="AV1-nd-cww"/>
-                                    <constraint firstAttribute="height" constant="14" id="ha1-DN-tVh"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="739" width="374" height="14"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
                                 <color key="textColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="gnz-1b-wGx">
-                                <rect key="frame" x="20" y="521" width="374" height="112"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="112" id="xDb-1b-tjm"/>
-                                </constraints>
-                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" reuseIdentifier="similarCell" textLabel="hml-So-qFd" style="IBUITableViewCellStyleDefault" id="YAJ-XH-IMg">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YAJ-XH-IMg" id="3O4-da-z0v">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hml-So-qFd">
-                                                    <rect key="frame" x="20" y="0.0" width="334" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="ChronicleDeck-Roman" family="Chronicle Deck" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddc-Iu-SNd">
-                                <rect key="frame" x="176" y="451" width="62.5" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="5yT-dI-l5Y"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
-                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title=" Copiar" image="doc.on.doc" catalog="system">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="light"/>
-                                </state>
-                                <connections>
-                                    <action selector="copyLabel:" destination="6f4-Lf-2pJ" eventType="touchUpInside" id="hxG-da-htl"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="gnz-1b-wGx" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="32o-kh-USo"/>
-                            <constraint firstItem="Rzo-IS-E3v" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="6zl-I3-5Qc"/>
-                            <constraint firstItem="Ddc-Iu-SNd" firstAttribute="top" secondItem="KBf-xi-4c4" secondAttribute="bottom" constant="30" id="AhR-y4-Ml4"/>
-                            <constraint firstItem="KBf-xi-4c4" firstAttribute="top" secondItem="tJz-j6-fEy" secondAttribute="bottom" constant="15" id="Ce8-y3-2NZ"/>
-                            <constraint firstItem="Rzo-IS-E3v" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="DU2-AP-N4l"/>
-                            <constraint firstItem="H8E-jL-BeQ" firstAttribute="top" secondItem="Ddc-Iu-SNd" secondAttribute="bottom" constant="30" id="Euf-RI-zna"/>
-                            <constraint firstItem="FUl-3o-Ebc" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="IwY-ky-WAl"/>
-                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="bottom" secondItem="FUl-3o-Ebc" secondAttribute="bottom" constant="30" id="NWy-xz-oOu"/>
-                            <constraint firstItem="KBf-xi-4c4" firstAttribute="centerY" secondItem="nyC-MJ-BvO" secondAttribute="centerY" id="Pgr-cn-b79"/>
-                            <constraint firstItem="Ddc-Iu-SNd" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="QSr-2n-KTb"/>
-                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="tJz-j6-fEy" secondAttribute="trailing" constant="20" id="SKh-wo-SWl"/>
-                            <constraint firstItem="tJz-j6-fEy" firstAttribute="top" secondItem="Rzo-IS-E3v" secondAttribute="bottom" constant="60" id="VNR-xQ-3Dj"/>
-                            <constraint firstItem="gnz-1b-wGx" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="VNk-oc-d4C"/>
-                            <constraint firstItem="gnz-1b-wGx" firstAttribute="top" secondItem="H8E-jL-BeQ" secondAttribute="bottom" constant="15" id="Y5I-rf-Xqr"/>
-                            <constraint firstItem="gnz-1b-wGx" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="dLe-FD-Acw"/>
-                            <constraint firstItem="tJz-j6-fEy" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="eBa-tA-6fA"/>
-                            <constraint firstItem="KBf-xi-4c4" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="ewE-u3-R5l"/>
-                            <constraint firstItem="tJz-j6-fEy" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="fIq-Ab-WOJ"/>
-                            <constraint firstItem="H8E-jL-BeQ" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="mQ9-rh-9T0"/>
-                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="gnz-1b-wGx" secondAttribute="trailing" constant="20" id="naa-Wv-xor"/>
-                            <constraint firstItem="KBf-xi-4c4" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="wEc-Ih-YT8"/>
-                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="KBf-xi-4c4" secondAttribute="trailing" constant="20" id="xWQ-kD-1FA"/>
-                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="Rzo-IS-E3v" secondAttribute="trailing" constant="20" id="xgY-Vc-oPl"/>
+                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="FUl-3o-Ebc" secondAttribute="trailing" constant="20" id="D8s-sS-Lot"/>
+                            <constraint firstItem="MBx-X4-H34" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="H0W-nA-Xiq"/>
+                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="tJz-j6-fEy" secondAttribute="trailing" constant="20" id="JGa-sR-JI7"/>
+                            <constraint firstItem="tJz-j6-fEy" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="L9p-Oz-so2"/>
+                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="MBx-X4-H34" secondAttribute="trailing" constant="20" id="QAt-hj-ofv"/>
+                            <constraint firstItem="MBx-X4-H34" firstAttribute="top" secondItem="tJz-j6-fEy" secondAttribute="bottom" constant="15" id="Qe2-DY-tYf"/>
+                            <constraint firstItem="H8E-jL-BeQ" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="Uyc-Ea-TMt"/>
+                            <constraint firstItem="H8E-jL-BeQ" firstAttribute="top" secondItem="KBf-xi-4c4" secondAttribute="bottom" constant="30" id="WAP-UB-WbL"/>
+                            <constraint firstItem="KBf-xi-4c4" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="Yev-CN-Vqv"/>
+                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="bottom" secondItem="FUl-3o-Ebc" secondAttribute="bottom" constant="60" id="blU-Wr-tu2"/>
+                            <constraint firstItem="YYh-qC-TR3" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="ewK-qE-3aS"/>
+                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="KBf-xi-4c4" secondAttribute="trailing" constant="20" id="g6S-9S-zEp"/>
+                            <constraint firstItem="tJz-j6-fEy" firstAttribute="top" secondItem="Rzo-IS-E3v" secondAttribute="bottom" constant="60" id="h7I-Ka-F5x"/>
+                            <constraint firstItem="KBf-xi-4c4" firstAttribute="top" secondItem="MBx-X4-H34" secondAttribute="bottom" constant="15" id="jxz-cI-DGI"/>
+                            <constraint firstItem="FUl-3o-Ebc" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="lC7-uR-xnH"/>
+                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="Rzo-IS-E3v" secondAttribute="trailing" constant="20" id="n7w-Rh-326"/>
+                            <constraint firstItem="KBf-xi-4c4" firstAttribute="centerY" secondItem="nyC-MJ-BvO" secondAttribute="centerYWithinMargins" id="pTJ-5i-30d"/>
+                            <constraint firstItem="Rzo-IS-E3v" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="sAg-wQ-zru"/>
+                            <constraint firstItem="YYh-qC-TR3" firstAttribute="top" secondItem="H8E-jL-BeQ" secondAttribute="bottom" constant="15" id="uRy-b5-M6b"/>
+                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="YYh-qC-TR3" secondAttribute="trailing" constant="20" id="zEX-bD-NyH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wJz-xo-VxJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="o6G-gv-wNo">
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="vTu-yH-ren"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="bookmark" catalog="system" id="Vqb-pq-ejL">
-                            <connections>
-                                <action selector="addBookmark:" destination="6f4-Lf-2pJ" id="PlQ-i7-ZeR"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="bookmark" catalog="system" id="Vqb-pq-ejL">
+                                <connections>
+                                    <action selector="addBookmark:" destination="6f4-Lf-2pJ" id="PlQ-i7-ZeR"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="doc.on.doc" catalog="system" id="SW5-Cf-Wkk">
+                                <connections>
+                                    <action selector="copyLabel:" destination="6f4-Lf-2pJ" id="BSb-v2-o53"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="annotationMarker" destination="FUl-3o-Ebc" id="e4U-Ij-HoQ"/>
                         <outlet property="bookmarkLabel" destination="Vqb-pq-ejL" id="rPl-Ok-xjo"/>
                         <outlet property="languageLabel" destination="Rzo-IS-E3v" id="9FQ-BH-OLg"/>
                         <outlet property="ptLabel" destination="tJz-j6-fEy" id="x6m-Ye-lVL"/>
-                        <outlet property="tableView" destination="gnz-1b-wGx" id="KVz-EF-cXD"/>
                         <outlet property="translationLabel" destination="KBf-xi-4c4" id="dD6-UI-qiB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cnn-e8-IoL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3850.4000000000001" y="843.32833583208401"/>
+            <point key="canvasLocation" x="3849.275362318841" y="843.08035714285711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hdi-zw-0kE">
