@@ -13,8 +13,8 @@
         <array key="ChronicleDeck-Bold.otf">
             <string>ChronicleDeck-Bold</string>
         </array>
-        <array key="ChronicleDeck-Italic.otf">
-            <string>ChronicleDeck-Italic</string>
+        <array key="ChronicleDeck-Semibold.otf">
+            <string>ChronicleDeck-Semi</string>
         </array>
     </customFonts>
     <scenes>
@@ -197,19 +197,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="laWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzo-IS-E3v">
-                                <rect key="frame" x="20" y="276" width="374" height="17"/>
+                                <rect key="frame" x="20" y="275.5" width="374" height="17"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="trWord" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-xi-4c4">
-                                <rect key="frame" x="20" y="436.5" width="374" height="28.5"/>
-                                <fontDescription key="fontDescription" name="ChronicleDeck-Bold" family="Chronicle Deck" pointSize="28"/>
-                                <color key="textColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-xi-4c4">
+                                <rect key="frame" x="20" y="435" width="374" height="31"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="trWord">
+                                        <attributes>
+                                            <color key="NSColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="28" name="ChronicleDeck-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1.1000000000000001" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="H8E-jL-BeQ">
-                                <rect key="frame" x="194.5" y="495" width="25" height="1"/>
+                                <rect key="frame" x="194.5" y="496" width="25" height="1"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="fBL-Em-iqw"/>
@@ -217,27 +224,27 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ptWord" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="tJz-j6-fEy">
-                                <rect key="frame" x="20" y="353" width="374" height="38"/>
+                                <rect key="frame" x="20" y="352.5" width="374" height="38"/>
                                 <fontDescription key="fontDescription" name="ChronicleDeck-Black" family="Chronicle Deck" pointSize="38"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adj." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBx-X4-H34">
-                                <rect key="frame" x="20" y="406" width="374" height="15.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="13"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pl. ximbini" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYh-qC-TR3">
-                                <rect key="frame" x="20" y="511" width="374" height="15"/>
-                                <fontDescription key="fontDescription" name="ChronicleDeck-Italic" family="Chronicle Deck" pointSize="14"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animated Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUl-3o-Ebc">
                                 <rect key="frame" x="20" y="739" width="374" height="14"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
                                 <color key="textColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pl. ximbini" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYh-qC-TR3">
+                                <rect key="frame" x="20" y="512" width="374" height="15"/>
+                                <fontDescription key="fontDescription" name="ChronicleDeck-Semi" family="Chronicle Deck" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adj." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBx-X4-H34">
+                                <rect key="frame" x="20" y="405.5" width="374" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -256,7 +263,7 @@
                             <constraint firstItem="YYh-qC-TR3" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="ewK-qE-3aS"/>
                             <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="KBf-xi-4c4" secondAttribute="trailing" constant="20" id="g6S-9S-zEp"/>
                             <constraint firstItem="tJz-j6-fEy" firstAttribute="top" secondItem="Rzo-IS-E3v" secondAttribute="bottom" constant="60" id="h7I-Ka-F5x"/>
-                            <constraint firstItem="KBf-xi-4c4" firstAttribute="top" secondItem="MBx-X4-H34" secondAttribute="bottom" constant="15" id="jxz-cI-DGI"/>
+                            <constraint firstItem="KBf-xi-4c4" firstAttribute="top" secondItem="MBx-X4-H34" secondAttribute="bottom" constant="14" id="jxz-cI-DGI"/>
                             <constraint firstItem="FUl-3o-Ebc" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="lC7-uR-xnH"/>
                             <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="Rzo-IS-E3v" secondAttribute="trailing" constant="20" id="n7w-Rh-326"/>
                             <constraint firstItem="KBf-xi-4c4" firstAttribute="centerY" secondItem="nyC-MJ-BvO" secondAttribute="centerYWithinMargins" id="pTJ-5i-30d"/>
