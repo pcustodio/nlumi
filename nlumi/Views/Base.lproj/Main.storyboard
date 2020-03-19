@@ -32,21 +32,21 @@
                                 <color key="separatorColor" red="0.93444638324873097" green="0.93444638324873097" blue="0.93444638324873097" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BookmarkCell" textLabel="v2q-IV-Ofn" detailTextLabel="gE6-xh-2Bs" imageView="1IW-6H-Pir" style="IBUITableViewCellStyleSubtitle" id="Ytq-YZ-dK7" customClass="MyTableViewCell" customModule="nlumi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="57.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="51.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ytq-YZ-dK7" id="p3T-XU-vVK">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="57.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="51.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v2q-IV-Ofn">
-                                                    <rect key="frame" x="68" y="10" width="35.5" height="16"/>
+                                                    <rect key="frame" x="68" y="9" width="35.5" height="16"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChronicleDeck-Bold" family="Chronicle Deck" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gE6-xh-2Bs">
-                                                    <rect key="frame" x="68" y="29" width="34" height="16"/>
+                                                    <rect key="frame" x="68" y="26" width="34" height="16"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Detail">
@@ -60,7 +60,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="lang_icon_changana" id="1IW-6H-Pir">
-                                                    <rect key="frame" x="20" y="18.5" width="33" height="20"/>
+                                                    <rect key="frame" x="20" y="15.5" width="33" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -196,7 +196,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-xi-4c4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-xi-4c4">
                                 <rect key="frame" x="20" y="435" width="374" height="31"/>
                                 <attributedString key="attributedText">
                                     <fragment content="trWord">
@@ -218,7 +218,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ptWord" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="tJz-j6-fEy">
-                                <rect key="frame" x="20" y="351.5" width="374" height="38"/>
+                                <rect key="frame" x="20" y="361.5" width="374" height="38"/>
                                 <fontDescription key="fontDescription" name="ChronicleDeck-Black" family="Chronicle Deck" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -235,14 +235,14 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adj." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBx-X4-H34">
-                                <rect key="frame" x="20" y="404.5" width="374" height="15.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adj" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBx-X4-H34">
+                                <rect key="frame" x="20" y="409.5" width="374" height="15.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="13"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iHH-R2-kgI">
-                                <rect key="frame" x="20" y="287.5" width="374" height="24"/>
+                                <rect key="frame" x="20" y="297.5" width="374" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="2pM-Tw-AH6"/>
                                     <constraint firstAttribute="width" constant="374" id="p1S-84-V9l"/>
@@ -258,7 +258,7 @@
                             <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="iHH-R2-kgI" secondAttribute="trailing" constant="20" id="JYt-CE-rcu"/>
                             <constraint firstItem="tJz-j6-fEy" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="L9p-Oz-so2"/>
                             <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="MBx-X4-H34" secondAttribute="trailing" constant="20" id="QAt-hj-ofv"/>
-                            <constraint firstItem="MBx-X4-H34" firstAttribute="top" secondItem="tJz-j6-fEy" secondAttribute="bottom" constant="15" id="Qe2-DY-tYf"/>
+                            <constraint firstItem="MBx-X4-H34" firstAttribute="top" secondItem="tJz-j6-fEy" secondAttribute="bottom" constant="10" id="Qe2-DY-tYf"/>
                             <constraint firstItem="H8E-jL-BeQ" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="Uyc-Ea-TMt"/>
                             <constraint firstItem="H8E-jL-BeQ" firstAttribute="top" secondItem="KBf-xi-4c4" secondAttribute="bottom" constant="40" id="WAP-UB-WbL"/>
                             <constraint firstItem="KBf-xi-4c4" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="Yev-CN-Vqv"/>
@@ -268,7 +268,7 @@
                             <constraint firstItem="tJz-j6-fEy" firstAttribute="top" secondItem="iHH-R2-kgI" secondAttribute="bottom" constant="40" id="eza-NO-elf"/>
                             <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="KBf-xi-4c4" secondAttribute="trailing" constant="20" id="g6S-9S-zEp"/>
                             <constraint firstItem="iHH-R2-kgI" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="hIN-fI-UwF"/>
-                            <constraint firstItem="KBf-xi-4c4" firstAttribute="top" secondItem="MBx-X4-H34" secondAttribute="bottom" constant="15" id="jxz-cI-DGI"/>
+                            <constraint firstItem="KBf-xi-4c4" firstAttribute="top" secondItem="MBx-X4-H34" secondAttribute="bottom" constant="10" id="jxz-cI-DGI"/>
                             <constraint firstItem="FUl-3o-Ebc" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="lC7-uR-xnH"/>
                             <constraint firstItem="KBf-xi-4c4" firstAttribute="centerY" secondItem="nyC-MJ-BvO" secondAttribute="centerYWithinMargins" id="pTJ-5i-30d"/>
                             <constraint firstItem="YYh-qC-TR3" firstAttribute="top" secondItem="H8E-jL-BeQ" secondAttribute="bottom" constant="15" id="uRy-b5-M6b"/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91018C852423FEB1006D5A71 /* app_icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 91018C842423FEB1006D5A71 /* app_icon.pdf */; };
 		9105D79C240441A100F3E239 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9105D79B240441A100F3E239 /* AppDelegate.swift */; };
 		9105D79E240441A100F3E239 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9105D79D240441A100F3E239 /* SceneDelegate.swift */; };
 		9105D7A0240441A100F3E239 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9105D79F240441A100F3E239 /* SearchViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		91018C842423FEB1006D5A71 /* app_icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = app_icon.pdf; sourceTree = "<group>"; };
 		9105D798240441A100F3E239 /* nlumi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nlumi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9105D79B240441A100F3E239 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9105D79D240441A100F3E239 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				9105D7A6240441A300F3E239 /* LaunchScreen.storyboard */,
 				91386A212407DE5C00E9B043 /* nlumi.xcdatamodeld */,
 				9105D7A9240441A300F3E239 /* Info.plist */,
+				91018C842423FEB1006D5A71 /* app_icon.pdf */,
 				9105D7B12404502D00F3E239 /* dictionary.json */,
 			);
 			path = nlumi;
@@ -197,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				910800EF240EC2DA00B60CB0 /* ChronicleDeck-Italic.otf in Resources */,
+				91018C852423FEB1006D5A71 /* app_icon.pdf in Resources */,
 				910800F2240EC2DA00B60CB0 /* ChronicleDeck-Semibold.otf in Resources */,
 				910800F0240EC2DA00B60CB0 /* ChronicleDeck-Bold.otf in Resources */,
 				910800F3240EC2DA00B60CB0 /* ChronicleDeck-Roman.otf in Resources */,
