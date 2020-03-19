@@ -53,7 +53,7 @@ class DetailViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("viewWillAppear is running")
+        //print("viewWillAppear is running")
         annotationMarker.text = ""
         retrieveData()
     }
@@ -61,14 +61,14 @@ class DetailViewController: UIViewController {
 
     @IBAction func addBookmark(_ sender: UIBarButtonItem) {
         if self.bookmarkLabel.image == UIImage(systemName: "bookmark.fill") {
-            print("yo we are a not favorite atm")
+            //print("yo we are a not favorite atm")
             deleteData()
             retrieveData()
             self.annotationMarker.alpha = 1
             annotationMarker.isHidden = true
             
         } else {
-            print("yo we are a favorite atm")
+            //print("yo we are a favorite atm")
             createData()
             retrieveData()
             annotationMarker.isHidden = false
@@ -152,11 +152,11 @@ class DetailViewController: UIViewController {
         
         do {
             let result = try managedContext.fetch(fetchRequest)
-            print(result)
+            //print(result)
             
             //if there are no stored items remove 
             if result.isEmpty {
-                print("there is no stuff")
+                //print("there is no stuff")
                 self.bookmarkLabel.image = UIImage(systemName: "bookmark")
             }
             
@@ -176,13 +176,13 @@ class DetailViewController: UIViewController {
                 if retrievedData.contains("\(ptWord)") == true {
                     
                     //check if is favorite
-                    print("It is a Fav")
+                    //print("It is a Fav")
 
                     //change bookmark icon to filled
                     self.bookmarkLabel.image = UIImage(systemName: "bookmark.fill")
                     
                 } else {
-                    print("Not a Fav")
+                    //print("Not a Fav")
                     self.bookmarkLabel.image = UIImage(systemName: "bookmark")
                 }
             }
@@ -212,7 +212,7 @@ class DetailViewController: UIViewController {
             //check if there are items to delete to prevent crash
             let checkist = test.count
             if checkist <= 0 {
-                print("blimey")
+                //print("blimey")
             } else {
                 let objectToDelete = test[0] as! NSManagedObject
                 managedContext.delete(objectToDelete)
