@@ -13,9 +13,9 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var ptLabel: UILabel!
     @IBOutlet weak var translationLabel: UILabel!
-    @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var annotationMarker: UILabel!
     @IBOutlet weak var bookmarkLabel: UIBarButtonItem!
+    @IBOutlet weak var imgLanguageLabel: UIImageView!
     
     let data = DictionaryLoader().dictionary
     
@@ -32,7 +32,15 @@ class DetailViewController: UIViewController {
 
         ptLabel.text = ptWord
         translationLabel.text = trWord
-        languageLabel.text = laWord
+        //languageLabel.text = laWord
+        
+        if laWord == "Português > Changana" {
+            imgLanguageLabel.image = UIImage(named: "translate_cha.pdf")
+        } else if laWord == "Português > Macua" {
+            imgLanguageLabel.image = UIImage(named: "translate_mac.pdf")
+        } else {
+            imgLanguageLabel.image = UIImage(named: "translate_xir.pdf")
+        }
         
         retrieveData()
         

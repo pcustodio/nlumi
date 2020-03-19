@@ -13,8 +13,8 @@
         <array key="ChronicleDeck-Bold.otf">
             <string>ChronicleDeck-Bold</string>
         </array>
-        <array key="ChronicleDeck-Semibold.otf">
-            <string>ChronicleDeck-Semi</string>
+        <array key="ChronicleDeck-Roman.otf">
+            <string>ChronicleDeck-Roman</string>
         </array>
     </customFonts>
     <scenes>
@@ -32,21 +32,21 @@
                                 <color key="separatorColor" red="0.93444638324873097" green="0.93444638324873097" blue="0.93444638324873097" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BookmarkCell" textLabel="v2q-IV-Ofn" detailTextLabel="gE6-xh-2Bs" imageView="1IW-6H-Pir" style="IBUITableViewCellStyleSubtitle" id="Ytq-YZ-dK7" customClass="MyTableViewCell" customModule="nlumi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="51.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="57.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ytq-YZ-dK7" id="p3T-XU-vVK">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="51.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="57.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v2q-IV-Ofn">
-                                                    <rect key="frame" x="68" y="9" width="35.5" height="16"/>
+                                                    <rect key="frame" x="68" y="10" width="35.5" height="16"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="ChronicleDeck-Bold" family="Chronicle Deck" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gE6-xh-2Bs">
-                                                    <rect key="frame" x="68" y="26" width="34" height="16"/>
+                                                    <rect key="frame" x="68" y="29" width="34" height="16"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Detail">
@@ -60,7 +60,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="lang_icon_changana" id="1IW-6H-Pir">
-                                                    <rect key="frame" x="20" y="15.5" width="33" height="20"/>
+                                                    <rect key="frame" x="20" y="18.5" width="33" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -196,12 +196,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="laWord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzo-IS-E3v">
-                                <rect key="frame" x="20" y="275.5" width="374" height="17"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-xi-4c4">
                                 <rect key="frame" x="20" y="435" width="374" height="31"/>
                                 <attributedString key="attributedText">
@@ -216,7 +210,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="H8E-jL-BeQ">
-                                <rect key="frame" x="194.5" y="496" width="25" height="1"/>
+                                <rect key="frame" x="194.5" y="506" width="25" height="1"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="fBL-Em-iqw"/>
@@ -224,7 +218,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ptWord" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="tJz-j6-fEy">
-                                <rect key="frame" x="20" y="352.5" width="374" height="38"/>
+                                <rect key="frame" x="20" y="351.5" width="374" height="38"/>
                                 <fontDescription key="fontDescription" name="ChronicleDeck-Black" family="Chronicle Deck" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -235,41 +229,50 @@
                                 <color key="textColor" red="0.069127388299999995" green="0.27728277439999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pl. ximbini" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYh-qC-TR3">
-                                <rect key="frame" x="20" y="512" width="374" height="15"/>
-                                <fontDescription key="fontDescription" name="ChronicleDeck-Semi" family="Chronicle Deck" pointSize="14"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pl. ximbini" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYh-qC-TR3">
+                                <rect key="frame" x="60" y="522" width="294" height="14.5"/>
+                                <fontDescription key="fontDescription" name="ChronicleDeck-Roman" family="Chronicle Deck" pointSize="14"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adj." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBx-X4-H34">
-                                <rect key="frame" x="20" y="405.5" width="374" height="15.5"/>
+                                <rect key="frame" x="20" y="404.5" width="374" height="15.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="13"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iHH-R2-kgI">
+                                <rect key="frame" x="20" y="287.5" width="374" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="2pM-Tw-AH6"/>
+                                    <constraint firstAttribute="width" constant="374" id="p1S-84-V9l"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="FUl-3o-Ebc" secondAttribute="trailing" constant="20" id="D8s-sS-Lot"/>
                             <constraint firstItem="MBx-X4-H34" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="H0W-nA-Xiq"/>
                             <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="tJz-j6-fEy" secondAttribute="trailing" constant="20" id="JGa-sR-JI7"/>
+                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="iHH-R2-kgI" secondAttribute="trailing" constant="20" id="JYt-CE-rcu"/>
                             <constraint firstItem="tJz-j6-fEy" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="L9p-Oz-so2"/>
                             <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="MBx-X4-H34" secondAttribute="trailing" constant="20" id="QAt-hj-ofv"/>
                             <constraint firstItem="MBx-X4-H34" firstAttribute="top" secondItem="tJz-j6-fEy" secondAttribute="bottom" constant="15" id="Qe2-DY-tYf"/>
                             <constraint firstItem="H8E-jL-BeQ" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="Uyc-Ea-TMt"/>
-                            <constraint firstItem="H8E-jL-BeQ" firstAttribute="top" secondItem="KBf-xi-4c4" secondAttribute="bottom" constant="30" id="WAP-UB-WbL"/>
+                            <constraint firstItem="H8E-jL-BeQ" firstAttribute="top" secondItem="KBf-xi-4c4" secondAttribute="bottom" constant="40" id="WAP-UB-WbL"/>
                             <constraint firstItem="KBf-xi-4c4" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="Yev-CN-Vqv"/>
                             <constraint firstItem="wJz-xo-VxJ" firstAttribute="bottom" secondItem="FUl-3o-Ebc" secondAttribute="bottom" constant="60" id="blU-Wr-tu2"/>
-                            <constraint firstItem="YYh-qC-TR3" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="ewK-qE-3aS"/>
+                            <constraint firstItem="iHH-R2-kgI" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="dAs-bM-1Wv"/>
+                            <constraint firstItem="YYh-qC-TR3" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="60" id="ewK-qE-3aS"/>
+                            <constraint firstItem="tJz-j6-fEy" firstAttribute="top" secondItem="iHH-R2-kgI" secondAttribute="bottom" constant="40" id="eza-NO-elf"/>
                             <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="KBf-xi-4c4" secondAttribute="trailing" constant="20" id="g6S-9S-zEp"/>
-                            <constraint firstItem="tJz-j6-fEy" firstAttribute="top" secondItem="Rzo-IS-E3v" secondAttribute="bottom" constant="60" id="h7I-Ka-F5x"/>
-                            <constraint firstItem="KBf-xi-4c4" firstAttribute="top" secondItem="MBx-X4-H34" secondAttribute="bottom" constant="14" id="jxz-cI-DGI"/>
+                            <constraint firstItem="iHH-R2-kgI" firstAttribute="centerX" secondItem="nyC-MJ-BvO" secondAttribute="centerX" id="hIN-fI-UwF"/>
+                            <constraint firstItem="KBf-xi-4c4" firstAttribute="top" secondItem="MBx-X4-H34" secondAttribute="bottom" constant="15" id="jxz-cI-DGI"/>
                             <constraint firstItem="FUl-3o-Ebc" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="lC7-uR-xnH"/>
-                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="Rzo-IS-E3v" secondAttribute="trailing" constant="20" id="n7w-Rh-326"/>
                             <constraint firstItem="KBf-xi-4c4" firstAttribute="centerY" secondItem="nyC-MJ-BvO" secondAttribute="centerYWithinMargins" id="pTJ-5i-30d"/>
-                            <constraint firstItem="Rzo-IS-E3v" firstAttribute="leading" secondItem="wJz-xo-VxJ" secondAttribute="leading" constant="20" id="sAg-wQ-zru"/>
                             <constraint firstItem="YYh-qC-TR3" firstAttribute="top" secondItem="H8E-jL-BeQ" secondAttribute="bottom" constant="15" id="uRy-b5-M6b"/>
-                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="YYh-qC-TR3" secondAttribute="trailing" constant="20" id="zEX-bD-NyH"/>
+                            <constraint firstItem="wJz-xo-VxJ" firstAttribute="trailing" secondItem="YYh-qC-TR3" secondAttribute="trailing" constant="60" id="zEX-bD-NyH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wJz-xo-VxJ"/>
                     </view>
@@ -291,7 +294,7 @@
                     <connections>
                         <outlet property="annotationMarker" destination="FUl-3o-Ebc" id="e4U-Ij-HoQ"/>
                         <outlet property="bookmarkLabel" destination="Vqb-pq-ejL" id="rPl-Ok-xjo"/>
-                        <outlet property="languageLabel" destination="Rzo-IS-E3v" id="9FQ-BH-OLg"/>
+                        <outlet property="imgLanguageLabel" destination="iHH-R2-kgI" id="hzc-S5-aMc"/>
                         <outlet property="ptLabel" destination="tJz-j6-fEy" id="x6m-Ye-lVL"/>
                         <outlet property="translationLabel" destination="KBf-xi-4c4" id="dD6-UI-qiB"/>
                     </connections>
